@@ -281,5 +281,25 @@ h5::before{
 .fullHD{
     width: 100%;
     height: 630px;
+    
 }
 
+.papochka-blinchikov{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.mochi{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #00c6a9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 100px;
+}
+.fa-play{
+    
+}
