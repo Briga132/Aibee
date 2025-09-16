@@ -135,7 +135,6 @@ header{
     border-bottom: solid 1px #ffffff ;
     margin-bottom: 90px;
     width: 100%;
-    min-width: 100%;
     margin-left: 40px;
     font-family: Noto Sans, sans-serif;
     position: relative;
@@ -153,6 +152,7 @@ header{
     background: none;
     color: #00c6a9;
     margin-left: auto;
+    text-decoration: none;
 }
 .mandarin{
     background: none;
@@ -176,8 +176,8 @@ h5{
     width: 50%;
     margin: auto;
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 80px;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
 }
 .sosiski2{
     font-family: Noto Sans, sans-serif;
@@ -239,5 +239,40 @@ h5::before{
 .golubcy2{
     color: #00c6a9;
 }
-
-
+.aguzok{
+    width:70px ;
+    height:70px  ;
+    
+}
+.burunduki{
+    display: flex;
+    padding-top: 30px;
+}
+.chip{
+    display: flex;
+    padding-top: 10px;
+}
+.speshite{
+    display: flex;
+    padding-top: 30px;
+}
+.ty{
+    display: flex;
+    padding-top: 10px;
+}
+.scrip{
+    color: white;
+    font-family: Noto Sans, sans-serif;
+    padding-left: 10px;
+}
+.otshelnik{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Noto Sans, sans-serif;
+    padding-top: 30px;
+}
+.okak{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Noto Sans, sans-serif;
+}
