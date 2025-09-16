@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 164px;
+    
+}
+
+.header-top{
+    background-color: white;
+    padding: 15px ;
+    height: 24px;
+    display: flex;
+    gap: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+.color{
+    color: #00c6a9;
+}
+
+.info{
+    text-decoration: none;
+    color: black;
+    font-family: Noto Sans, sans-serif;
+   
+}
+
+.header-bottom{
+    display: flex;
+    height: 110px;
+    background-color: #00c6a9;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    gap: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.imglogo{
+    width: 70px;
+    height: 110px;
+    background-color: white;
+    margin-left: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    font-family: Noto Sans, sans-serif;
+}
+
+.link:hover{
+    color: black;
+}
+
+
+.pechenka{
+    display: flex; 
+    font-family: Noto Sans, sans-serif;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.pechenka a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.pechenka a:hover{
+    color: black;
+}
+
+.polpichenki{
+    display: flex;
+    align-items: center;
+}
+
+.polpichenki .btn{
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    padding: 30px;
+    transition: color 0.3s ease;
+}
+
+.polpichenki .btn:hover{
+    color: black;
+}
+
+
+/* footer */
+.end{
+    height: 513px;
+    background-color: #252525;
+    width: 100%;
+}
+.malekuly{
+    width: 50%;
+    margin: auto;
+    display: flex;
+}
+.obshirnoe{
+    margin: auto;
+    display: flex;
+}
+.white{
+    width: 70px;
+    height: 110px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.atom{
+    border: none;
+    border-bottom: solid 1px #ffffff ;
+    margin-bottom: 90px;
+    width: 100%;
+    min-width: 100%;
+    margin-left: 40px;
+    font-family: Noto Sans, sans-serif;
+    position: relative;
+    top: 50px;
+}
+
+.minatom{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    display: flex;
+}
+.knopka{
+    border: none;
+    background: none;
+    color: #00c6a9;
+    margin-left: auto;
+}
+.mandarin{
+    background: none;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    color: white;
+}
+
+h5{
+    font-size: 20px;
+    color: white;
+    font-family: Noto Sans, sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    right: -20px;
+    top: 30px;
+    
+}
+.pirog{
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 80px;
+}
+.sosiski2{
+    font-family: Noto Sans, sans-serif;
+    top: 30px;
+    position: relative;
+}
+.sosi_nika{
+    width: 15px;
+}
+.sosiski{
+   color: white;
+   display: flex;
+   padding-bottom: 10px;
+   text-decoration: none;
+   gap: 15px;
+}
+h5::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #00c6a9;
+    transform: translateY(-50%);
+    left: -20px;
+}
+.ikonki{
+    color: #00c6a9;
+    font-size: 24px;
+    padding-right: 5px;
+    text-decoration: none;
+
+}
+.ikonki2{
+   top: 30px;
+   position: relative;
+   top: 45px;
+}
+.suliki{
+    text-decoration: none;
+    color: white;
+    font-family: Noto Sans, sans-serif;
+    transition: color 0.3s ease;
+}
+.suliki:hover{
+    color:#00c6a9 ;
+}
+.burgeriukas{
+    list-style: none;
+    padding-bottom: 10px;
+    
+}
+.burger-king{
+    padding-left: 0;   
+    position: relative;
+    top: 30px;
+}
+.golubcy2{
+    color: #00c6a9;
+}
+
+
