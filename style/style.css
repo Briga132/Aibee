@@ -269,10 +269,17 @@ h5::before{
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     font-family: Noto Sans, sans-serif;
-    padding-top: 30px;
+    padding: 30px;
 }
 .okak{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
     font-family: Noto Sans, sans-serif;
 }
+
+
+.fullHD{
+    width: 100%;
+    height: 630px;
+}
+
