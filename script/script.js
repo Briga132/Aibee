@@ -21,4 +21,3 @@
     );
   }
 
-arrowL.addEventListener("click", scrollLeft)
