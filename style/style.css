@@ -994,7 +994,7 @@ h4{
     font-size: 14px;
     padding-top: 55px;
     padding-left: 15px;
-    transition: padding 0.3s ease;
+    transition: 0.1s ease;
 }
 
 .day::placeholder{
@@ -1003,7 +1003,8 @@ h4{
     transition: opacity 0.2s ease;
 }
 .day:focus{
-    padding-top: 55px;
+    height: 110px;
+    padding-top: 15px;
 }
 .day:focus::placeholder{
     opacity: 0;
