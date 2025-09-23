@@ -491,10 +491,12 @@ h4{
 }
 .liniuote{
     border-bottom: solid 3px #00c6a9;
-    width: 85px;
+    width: 103px;
     padding-top: 5px;
 }
-
+.px1{
+    margin-left: -1.8px;
+}
 .cvetnoe{
     color: #00c6a9;
 }
@@ -787,13 +789,13 @@ h4{
     padding: 17px 28px;
     position: relative;
     top: 160px;
-    left: 15px;
+    transition: color 0.3s ease;
 
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 
-      background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(-90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(-90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
 
     background-repeat: no-repeat;
     background-position: right 15px center;
@@ -807,8 +809,7 @@ h4{
     padding: 17px 28px;
     position: relative;
     top: 160px;
-    right: 15px;
-    
+    transition: color 0.3s ease;
 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -881,6 +882,7 @@ h4{
 .mandarinka4{
     display: flex;
     justify-content: flex-end;
+    height: 0px;
 }
 
 .klubnika{
@@ -982,16 +984,30 @@ h4{
 
 .day{
     width: 60%;
-    border: #00c6a9 1px solid;
-    padding: 50px 15px;
-
-    
+    height: 70px;         
+    border: 1px solid #00c6a9;
+    padding: 15px;
+    resize: none;          
+    text-align: left;
+    vertical-align: top;
+    font-family: Noto Sans, sans-serif;
+    font-size: 14px;
+    padding-top: 55px;
+    padding-left: 15px;
+    transition: padding 0.3s ease;
 }
 
 .day::placeholder{
     color: #00c6a9;
+    opacity: 1;
+    transition: opacity 0.2s ease;
 }
-
+.day:focus{
+    padding-top: 55px;
+}
+.day:focus::placeholder{
+    opacity: 0;
+}
 .kevin{
     margin-top: -380px;
     display: flex;
