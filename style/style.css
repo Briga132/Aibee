@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     box-sizing: border-box;
@@ -8,7 +9,6 @@ body{
 header{
     width: 100%;
     height: 164px;
-    
 }
 
 .header-top{
@@ -17,10 +17,13 @@ header{
     height: 24px;
     display: flex;
     gap: 20px;
+    width: 100%;
+    margin: auto;
+}
+.fulll{
     width: 50%;
     margin: auto;
 }
-
 .color{
     color: #00c6a9;
 }
@@ -55,6 +58,11 @@ header{
     margin-left: 20px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.hagiwagi{
+    margin-top: 5px;
+    margin-left: 3px;
 }
 
 .link{
@@ -127,11 +135,17 @@ header{
 }
 
 .white{
-    width: 70px;
-    height: 110px;
+    width: 60px;
+    height: 120px;
     background-color: white;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.kisimisi{
+    margin-top: 12px;
+    height: 85px;
+    width: 60px;
 }
 
 .atom{
@@ -294,7 +308,7 @@ h5::before{
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     font-family: Noto Sans, sans-serif;
-    padding: 30px;
+    padding-top: 30px;
 }
 
 .okak{
@@ -388,7 +402,6 @@ h5::before{
 .wsio-ili-nechewo{
     z-index: 2;
 }
-/* img */
 
 .hachapuri{
     width: 580px;
@@ -430,16 +443,22 @@ h5::before{
     justify-content: flex-end;
    
 }
-.dots{
+/* img */
+.dots {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: flex-end;
     position: relative;
     top: -360px;
     z-index: 1;
+    pointer-events: none;
 }
+
 .dota{
     width: 600px;
 }
+
 #arrowL{
     border: none;
     background-color: unset;
@@ -448,17 +467,19 @@ h5::before{
     border: none;
     background-color: unset;
 }
+
 /* section 2 book apointment */
 .main2{
-    height: 500px;
+    height: 560px;
     width: 100%;
 }
 .formochka{
-    height: 250px;
+    height: 350px;
     border:  1px black;
     box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.2);
     margin-top: 90px;
     padding: 50px;
+
 }
 .mini{
     width: 50%;
@@ -480,37 +501,43 @@ h4{
 
 .dabltrack{
     display: flex;
-    gap: 15px;
+    gap: 10px;
+
 }
 
 .kontratrack{
     display: flex;
-    gap: 15px;
+    gap: 10px;
+    padding-bottom: 0px;
+
 }
 
 .sarai{
-    width: 300px;
-    height: 45px;
+    width: 315px;
+    height: 40px;
     border:solid 1px #00c6a9;
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 10px;
+    
     
 }
 .saraii{
-    width: 342px;
-    height: 50px;
+    width: 357px;
+    height: 44px;
     border:solid 1px #00c6a9;
     border-radius: 5px;
     padding-left: 20px;
     font-size: 14px;
+    margin-top: 10px;
 
-   -webkit-appearance: none;
+    -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 
     
-    background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='%2300c6a9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><polyline points='6 9 12 15 18 9'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='%23808080' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><polyline points='6 9 12 15 18 9'/></svg>");
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 24px 24px;
@@ -524,3 +551,484 @@ input[type="date"] {
   color: #00c6a9; 
 }
 
+.cheburek{
+    margin-bottom: 20px;
+}
+
+
+.saraii:optional{
+    color: #525252;
+}
+
+
+.simka{
+    text-decoration: none;
+    border: solid 1px black;
+    padding: 15px 50px;
+    color: white;
+    background-color: #252525;
+    border-radius: 5px;
+}
+.simka:hover{
+    background-color: black;
+}
+.sumka{
+    margin-top: 45px;
+}
+
+/* about hospital */
+.main3{
+    width: 100%;
+    height: 590px;
+}
+
+.pupsikas{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    gap: 60px;
+}
+
+.kaktus{
+    color: #00c6a9;
+
+}
+
+h4{
+    font-size: 30px;
+    
+}
+
+.labuba{
+    width: 550px;
+    line-height: 1.5;
+    margin-top: -15px;
+    color: rgba(0, 0, 0, 0.449);
+}
+
+.shnobel{
+    margin-top: 45px;
+}
+
+.bobel{
+    text-decoration: none;
+    color: white;
+    background-color: #252525;
+    border: #252525;
+    padding: 14px 45px;
+    border-radius: 5px;
+}
+
+.bobel:hover{
+    background-color: black;
+}
+.mielas{
+    margin-top: 110px;
+    
+}
+
+/* section 4 hospital treatment */
+.main4{
+    width: 100%;
+    height: 430px;
+}
+
+.krovat{
+    width: 50%;
+    margin: auto;
+}
+
+.silizionka{
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+    
+}
+
+.help{
+    width: 260px;
+    line-height: 1.4;
+    margin-top: -16px;
+}
+
+.serdce{
+    text-align: center;
+}
+
+.liogkije{
+    color: #00c6a9;
+}
+
+.gore{
+    text-decoration: none;
+    color: #00c6a9;
+}
+
+.gore:hover{
+    color: black;
+}
+
+.onre{
+    padding-bottom: 20px;
+}
+
+.banshi{
+    font-size: 24px;
+}
+.blagavonja{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -300px;
+    pointer-events: none;
+}
+
+
+/* our doctors */
+.main5{
+    width: 100%;
+    height: 700px;
+    background-color: #00c6a9;
+}
+
+.cm{
+    color: black;
+}
+
+.wraithking{
+    text-align: center;
+    color: white;
+
+    
+}
+
+.azuki{
+    display: flex;
+    width: 46%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+
+
+.darkwillow{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+
+
+}
+
+.io1{
+    background-color: rgb(255, 255, 255);
+    width: 327px;
+    height: auto;
+}
+
+.pops{
+    padding: 11px;
+    margin-top: -55px;
+    width: 305px;
+    height: 270px;
+}
+
+.io2{
+    background-color: white;
+    width: 327px;
+    height: auto;
+}
+
+.io3{
+    background-color: white;
+    width: 327px;
+    height: auto;
+}
+
+.dyrka{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.morkovka{
+    color: #00c6a9;
+    
+    
+}
+
+.superstar{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.troksa{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+.haribo{
+    width: 100%;
+    height: auto;
+    color: black;
+    gap: 10px;
+    text-decoration: none;
+    padding-right: 15px;
+    margin-left: 10px;
+}
+
+.axer{
+    height: 20px;
+    background-color: white;
+    padding: 17px 28px;
+    position: relative;
+    top: 160px;
+    left: 15px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+      background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(-90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+    
+}
+
+.axel { 
+    height: 20px;
+    background-color: white;
+    padding: 17px 28px;
+    position: relative;
+    top: 160px;
+    right: 15px;
+    
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+}
+
+
+.axer:hover{
+    background-color: #252525;
+
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(-90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+}
+
+.axel:hover{
+    background-color: #252525;
+
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+    
+}
+
+.bloodseeker{
+    padding-top: 110px;
+    margin-bottom: 90px;
+}
+
+/* testimonial */
+
+.skrytnost{
+    display: none;
+}
+
+.main6{
+    width: 100%;
+    height: 500px;
+}
+
+.arbuzik{
+    margin: auto;
+    width: 50%;
+}
+
+.pomidori{
+    padding-top: 100px;
+}
+
+.ogurchikiiii{
+    color: #00c6a9;
+}
+
+.baklazhan{
+    border:  1px black;
+    box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.mandarinka4{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.klubnika{
+    margin-top: -20px;
+    font-size: 25px;
+    color: #00c6a9;
+}
+
+.malina{
+    color: #00c6a9;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.chereshnya{
+    color: rgba(0, 0, 0, 0.250);
+    margin-top: 1px;
+}
+
+.vishnya{
+    line-height: 1.7;
+}
+
+.syro4ekl{
+    background-color: #00c6a9;
+    padding: 17px 28px;
+    height: 130px;
+    position: relative;
+    bottom: -45px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'  xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
+    background-repeat: no-repeat;
+    background-position: right 2px center;
+    background-size: 24px 24px;
+    
+    background-size: 50px;
+    
+}
+
+.syro4ekr{
+    background-color: #00c6a9;
+    padding: 17px 28px;
+    height: 130px;
+    position: relative;
+    bottom: -45px;
+
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(-90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
+    background-repeat: no-repeat;
+    background-position: right 2px center;
+    background-size: 24px 24px;
+
+    background-size: 50px;
+    
+}
+
+.pipiski{
+    display: flex;
+}
+
+.burlyki{
+    display: flex;
+
+}
+
+/* get in touch */
+
+.main7{
+    height: 580px;
+    width: 100%;
+}
+
+.dobranoc{
+    width: 50%;
+    margin: auto;
+}
+
+
+.bad{
+    width: 60%;
+    border: #00c6a9 1px solid;
+    padding: 15px;
+    
+}
+
+.bad::placeholder{
+    color: #00c6a9;
+}
+
+.day{
+    width: 60%;
+    border: #00c6a9 1px solid;
+    padding: 50px 15px;
+
+    
+}
+
+.day::placeholder{
+    color: #00c6a9;
+}
+
+.kevin{
+    margin-top: -380px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.good_night{
+    padding-bottom: 25px;
+}
+
+.winks{
+    text-decoration: none;
+    border: solid 1px #00c6a9;
+    color: white;
+    padding: 18px 58px;
+    background-color: #00c6a9;
+    font-weight: bold;
+}
+
+.feji{
+    margin-top: 18px;
+}
+
+/* media */
+
+@media(min-width: 1200px){
+    
+}
+
+@media(min-width: 992px)and(max-width:1199px){
+
+}
+
+@media(min-width:768px)and(max-width:991px){
+
+}
+
+@media(max-width:767px){
+
+}
