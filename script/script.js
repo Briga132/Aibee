@@ -40,12 +40,12 @@
                 const isVisible = fullText.classList.contains('show');
 
                 if (isVisible) {
-                    // Скрываем текст
+
                     dots.style.display = 'inline';
                     fullText.classList.remove('show');
                     button.textContent = 'READ MORE';
                 } else {
-                    // Показываем текст
+
                     dots.style.display = 'none';
                     fullText.classList.add('show');
                     button.textContent = 'READ LESS';

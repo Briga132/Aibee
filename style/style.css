@@ -1,41 +1,42 @@
-
-body{
+body {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
     font-family: Noto Sans, sans-serif;
 }
 
-header{
+header {
     width: 100%;
     height: 164px;
 }
 
-.header-top{
+.header-top {
     background-color: white;
-    padding: 15px ;
+    padding: 15px;
     height: 24px;
     display: flex;
     gap: 20px;
     width: 100%;
     margin: auto;
 }
-.fulll{
+
+.fulll {
     width: 70%;
     margin: auto;
 }
-.color{
+
+.color {
     color: #00c6a9;
 }
 
-.info{
+.info {
     text-decoration: none;
     color: black;
     font-family: Noto Sans, sans-serif;
-   
+
 }
 
-.header-bottom{
+.header-bottom {
     display: flex;
     height: 110px;
     background-color: #00c6a9;
@@ -43,7 +44,7 @@ header{
     padding: 0 10px;
 }
 
-.navbar{
+.navbar {
     list-style: none;
     display: flex;
     gap: 14px;
@@ -51,7 +52,7 @@ header{
     margin: 0;
 }
 
-.imglogo{
+.imglogo {
     width: 70px;
     height: 110px;
     background-color: white;
@@ -60,12 +61,12 @@ header{
     padding-right: 30px;
 }
 
-.hagiwagi{
+.hagiwagi {
     margin-top: 5px;
     margin-left: 3px;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: white;
     margin-left: 50px;
@@ -74,35 +75,36 @@ header{
     font-family: Noto Sans, sans-serif;
 }
 
-.link:hover{
+.link:hover {
     color: black;
 }
 
 
-.pechenka{
-    display: flex; 
+.pechenka {
+    display: flex;
     font-family: Noto Sans, sans-serif;
     align-items: center;
     gap: 20px;
     margin-left: auto;
 }
 
-.pechenka a{
+.pechenka a {
     color: white;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
 }
-.pechenka a:hover{
+
+.pechenka a:hover {
     color: black;
 }
 
-.polpichenki{
+.polpichenki {
     display: flex;
     align-items: center;
 }
 
-.polpichenki .btn{
+.polpichenki .btn {
     background: none;
     border: none;
     font-size: 18px;
@@ -111,30 +113,30 @@ header{
     transition: color 0.3s ease;
 }
 
-.polpichenki .btn:hover{
+.polpichenki .btn:hover {
     color: black;
 }
 
 /* footer */
 
-.end{
+.end {
     height: 513px;
     background-color: #252525;
     width: 100%;
 }
 
-.malekuly{
+.malekuly {
     width: 70%;
     margin: auto;
     display: flex;
 }
 
-.obshirnoe{
+.obshirnoe {
     margin: auto;
     display: flex;
 }
 
-.white{
+.white {
     width: 60px;
     height: 120px;
     background-color: white;
@@ -142,15 +144,15 @@ header{
     padding-right: 30px;
 }
 
-.kisimisi{
+.kisimisi {
     margin-top: 12px;
     height: 85px;
     width: 60px;
 }
 
-.atom{
+.atom {
     border: none;
-    border-bottom: solid 1px #ffffff ;
+    border-bottom: solid 1px #ffffff;
     margin-bottom: 90px;
     width: 100%;
     margin-left: 40px;
@@ -159,14 +161,14 @@ header{
     top: 50px;
 }
 
-.minatom{
+.minatom {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-left: auto;
     display: flex;
 }
 
-.knopka{
+.knopka {
     border: none;
     background: none;
     color: #00c6a9;
@@ -174,7 +176,7 @@ header{
     text-decoration: none;
 }
 
-.mandarin{
+.mandarin {
     background: none;
     border: none;
     font-size: 16px;
@@ -182,7 +184,7 @@ header{
     color: white;
 }
 
-h5{
+h5 {
     font-size: 20px;
     color: white;
     font-family: Noto Sans, sans-serif;
@@ -190,10 +192,10 @@ h5{
     position: relative;
     right: -20px;
     top: 30px;
-    
+
 }
 
-.pirog{
+.pirog {
     width: 70%;
     margin: auto;
     display: grid;
@@ -201,25 +203,25 @@ h5{
     gap: 50px;
 }
 
-.sosiski2{
+.sosiski2 {
     font-family: Noto Sans, sans-serif;
     top: 30px;
     position: relative;
 }
 
-.sosi_nika{
+.sosi_nika {
     width: 15px;
 }
 
-.sosiski{
-   color: white;
-   display: flex;
-   padding-bottom: 10px;
-   text-decoration: none;
-   gap: 15px;
+.sosiski {
+    color: white;
+    display: flex;
+    padding-bottom: 10px;
+    text-decoration: none;
+    gap: 15px;
 }
 
-h5::before{
+h5::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -231,7 +233,7 @@ h5::before{
     left: -20px;
 }
 
-.ikonki{
+.ikonki {
     color: #00c6a9;
     font-size: 24px;
     padding-right: 5px;
@@ -239,79 +241,79 @@ h5::before{
 
 }
 
-.ikonki2{
-   top: 30px;
-   position: relative;
-   top: 45px;
+.ikonki2 {
+    top: 30px;
+    position: relative;
+    top: 45px;
 }
 
-.suliki{
+.suliki {
     text-decoration: none;
     color: white;
     font-family: Noto Sans, sans-serif;
     transition: color 0.3s ease;
 }
 
-.suliki:hover{
-    color:#00c6a9 ;
+.suliki:hover {
+    color: #00c6a9;
 }
 
-.burgeriukas{
+.burgeriukas {
     list-style: none;
     padding-bottom: 10px;
-    
+
 }
 
-.burger-king{
-    padding-left: 0;   
+.burger-king {
+    padding-left: 0;
     position: relative;
     top: 30px;
 }
 
-.golubcy2{
+.golubcy2 {
     color: #00c6a9;
 }
 
-.aguzok{
-    width:70px ;
-    height:70px  ;
-    
+.aguzok {
+    width: 70px;
+    height: 70px;
+
 }
 
-.burunduki{
+.burunduki {
     display: flex;
     padding-top: 30px;
 }
 
-.chip{
+.chip {
     display: flex;
     padding-top: 10px;
 }
 
-.speshite{
+.speshite {
     display: flex;
     padding-top: 30px;
 }
 
-.ty{
+.ty {
     display: flex;
     padding-top: 10px;
 }
 
-.scrip{
+.scrip {
     color: white;
     font-family: Noto Sans, sans-serif;
     padding-left: 10px;
 }
 
-.otshelnik{
+.otshelnik {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     font-family: Noto Sans, sans-serif;
     padding-top: 30px;
 }
 
-.okak{
+.okak {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
     font-family: Noto Sans, sans-serif;
@@ -319,13 +321,15 @@ h5::before{
 
 /* main */
 /* section 1 Mico Hospital */
-.fullHD{
+.fullHD {
     width: 100%;
     height: 630px;
     box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.2);
 }
-
-.papochka-blinchikov{
+.vosvagen{
+    display: none;
+}
+.papochka-blinchikov {
     display: flex;
     width: 70%;
     margin: auto;
@@ -352,34 +356,36 @@ h5::before{
     0% {
         box-shadow: 0 0 0px 0 rgba(0, 198, 169, 0.7);
     }
+
     50% {
         box-shadow: 0 0 0px 15px rgba(0, 198, 169, 0);
     }
+
     100% {
         box-shadow: 0 0 0px 0 rgba(0, 198, 169, 0);
     }
 }
 
 
-.zelionka{
+.zelionka {
     font-family: Noto Sans, sans-serif;
     margin-top: 50px;
     font-size: 47px;
     line-height: 1;
 }
 
-.dell{
+.dell {
     color: #00c6a9;
 }
 
-.paliruj{
+.paliruj {
     font-family: Noto Sans, sans-serif;
     width: 80%;
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.609);
 }
 
-.topchik{
+.topchik {
     text-decoration: none;
     border: solid 1px black;
     border-radius: 5px;
@@ -389,60 +395,62 @@ h5::before{
     font-family: Noto Sans, sans-serif;
     transition: color 0.3s ease;
 }
-.topchik:hover{
+
+.topchik:hover {
     background-color: black;
 }
 
 
-.bortiki{
+.bortiki {
     margin-top: 50px;
-    
+
 }
 
-.wsio-ili-nechewo{
+.wsio-ili-nechewo {
     z-index: 2;
 }
 
-.hachapuri{
+.hachapuri {
     width: 580px;
     height: 150;
 }
 
-.venera{
-   
+.venera {
+
     width: 25px;
     height: 25px;
     z-index: 2;
 }
 
-.mars{
-    
+.mars {
+
     width: 25px;
     height: 25px;
     margin-right: 35px;
     z-index: 2;
 }
 
-.jupiter{
+.jupiter {
     background-color: #00c6a9;
-    width:10px ;
-    height:15px ;
-    padding:17px 20px ;
+    width: 10px;
+    height: 15px;
+    padding: 17px 20px;
     transition: color 0.3s ease;
-   
+
 }
 
-.jupiter:hover{
+.jupiter:hover {
     background-color: black;
-   
+
 }
 
-.kosmos{
+.kosmos {
     display: flex;
     margin-top: 70px;
     justify-content: flex-end;
-   
+    margin-right: 410px;
 }
+
 /* img */
 .dots {
     width: 100%;
@@ -455,60 +463,67 @@ h5::before{
     pointer-events: none;
 }
 
-.dota{
+.dota {
     width: 600px;
 }
 
-#arrowL{
+#arrowL {
     border: none;
     background-color: unset;
 }
-#arrowR{
+
+#arrowR {
     border: none;
     background-color: unset;
 }
 
 /* section 2 book apointment */
-.main2{
+.main2 {
     height: 560px;
     width: 100%;
 }
-.formochka{
+
+.formochka {
     height: 350px;
-    border:  1px black;
+    border: 1px black;
     box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.2);
     margin-top: 90px;
     padding: 50px;
 
 }
-.mini{
+
+.mini {
     width: 70%;
     margin: auto;
 }
-h4{
+
+h4 {
     margin-top: -10px;
     font-size: 24px;
 }
-.liniuote{
+
+.liniuote {
     border-bottom: solid 3px #00c6a9;
     width: 103px;
     padding-top: 5px;
 }
-.px1{
+
+.px1 {
     margin-left: -1.8px;
 }
-.cvetnoe{
+
+.cvetnoe {
     color: #00c6a9;
 }
 
-.dabltrack{
+.dabltrack {
     display: flex;
     gap: 10px;
     justify-content: center;
-   
+
 }
 
-.kontratrack{
+.kontratrack {
     display: flex;
     gap: 10px;
     padding-bottom: 0px;
@@ -516,21 +531,22 @@ h4{
 
 }
 
-.sarai{
+.sarai {
     width: 315px;
     height: 40px;
-    border:solid 1px #00c6a9;
+    border: solid 1px #00c6a9;
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 10px;
-    
-    
+
+
 }
-.saraii{
+
+.saraii {
     width: 357px;
     height: 44px;
-    border:solid 1px #00c6a9;
+    border: solid 1px #00c6a9;
     border-radius: 5px;
     padding-left: 20px;
     font-size: 14px;
@@ -540,32 +556,34 @@ h4{
     -moz-appearance: none;
     appearance: none;
 
-    
+
     background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='%23808080' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><polyline points='6 9 12 15 18 9'/></svg>");
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 24px 24px;
 
-    padding-right: 45px; 
-}
-.sarai::placeholder{
-    color: #00c6a9;
-}
-input[type="date"] {
-  color: #00c6a9; 
+    padding-right: 45px;
 }
 
-.cheburek{
+.sarai::placeholder {
+    color: #00c6a9;
+}
+
+input[type="date"] {
+    color: #00c6a9;
+}
+
+.cheburek {
     margin-bottom: 20px;
 }
 
 
-.saraii:optional{
+.saraii:optional {
     color: #525252;
 }
 
 
-.simka{
+.simka {
     text-decoration: none;
     border: solid 1px black;
     padding: 15px 50px;
@@ -573,20 +591,22 @@ input[type="date"] {
     background-color: #252525;
     border-radius: 5px;
 }
-.simka:hover{
+
+.simka:hover {
     background-color: black;
 }
-.sumka{
+
+.sumka {
     margin-top: 45px;
 }
 
 /* about hospital */
-.main3{
+.main3 {
     width: 100%;
     height: 590px;
 }
 
-.pupsikas{
+.pupsikas {
     display: flex;
     width: 70%;
     margin: auto;
@@ -594,29 +614,30 @@ input[type="date"] {
     justify-content: center;
 }
 
-.kaktus{
+.kaktus {
     color: #00c6a9;
 
 }
 
-h4{
+h4 {
     font-size: 30px;
-    
+
 }
 
-.labuba{
+.labuba {
     width: 550px;
     line-height: 1.5;
     margin-top: -15px;
     color: rgba(0, 0, 0, 0.449);
 }
-.labuba2{
+
+.labuba2 {
     display: none;
     width: 550px;
     line-height: 1.5;
     margin-top: -15px;
     color: rgba(0, 0, 0, 0.449);
-    
+
 }
 
 .hide {
@@ -635,15 +656,16 @@ h4{
     max-height: 500px;
     opacity: 3;
 }
+
 .show {
-  display: block;
+    display: block;
 }
 
-.shnobel{
+.shnobel {
     margin-top: 45px;
 }
 
-.bobel{
+.bobel {
     text-decoration: none;
     color: white;
     background-color: #252525;
@@ -652,32 +674,33 @@ h4{
     border-radius: 5px;
 }
 
-.bobel:hover{
+.bobel:hover {
     background-color: black;
 }
-.mielas{
+
+.mielas {
     margin-top: 110px;
-    
+
 }
 
 /* section 4 hospital treatment */
-.main4{
+.main4 {
     width: 100%;
     height: 430px;
 }
 
-.krovat{
+.krovat {
     width: 70%;
     margin: auto;
 }
 
-.silizionka{
+.silizionka {
     grid-template-columns: auto auto auto auto;
     display: grid;
-    
+
 }
 
-.help{
+.help {
     width: 260px;
     line-height: 1.4;
     margin-top: -16px;
@@ -689,26 +712,26 @@ h4{
     overflow: hidden;
     visibility: hidden;
     margin-top: 0;
-    margin-top: -15px;
+    margin-top: -17px;
 }
 
 
 .help2.show {
-    width: 70%;
-    max-height: 60px; 
+    width: 60%;
+    max-height: 70px;
     opacity: 1;
     visibility: visible;
 }
 
-.serdce{
+.serdce {
     text-align: center;
 }
 
-.liogkije{
+.liogkije {
     color: #00c6a9;
 }
 
-.gore{
+.gore {
     border: none;
     background: none;
     text-decoration: none;
@@ -716,45 +739,47 @@ h4{
     margin-left: -6px;
 }
 
-.gore:hover{
+.gore:hover {
     color: black;
 }
 
-.onre{
+.onre {
     padding-bottom: 20px;
 }
 
-.banshi{
+.banshi {
     font-size: 24px;
 }
-.blagavonja{
+
+.blagavonja {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    top: -300px;
+    top: -320px;
     pointer-events: none;
 }
 
 
+
 /* our doctors */
-.main5{
+.main5 {
     width: 100%;
     height: 700px;
     background-color: #00c6a9;
 }
 
-.cm{
+.cm {
     color: black;
 }
 
-.wraithking{
+.wraithking {
     text-align: center;
     color: white;
 
-    
+
 }
 
-.azuki{
+.azuki {
     display: flex;
     width: 46%;
     margin: auto;
@@ -763,7 +788,7 @@ h4{
 
 
 
-.darkwillow{
+.darkwillow {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 15px;
@@ -771,45 +796,45 @@ h4{
 
 }
 
-.io1{
+.io1 {
     background-color: rgb(255, 255, 255);
     width: 327px;
     height: auto;
 }
 
-.pops{
+.pops {
     padding: 11px;
     margin-top: -55px;
     width: 305px;
     height: 270px;
 }
 
-.io2{
+.io2 {
     background-color: white;
     width: 327px;
     height: auto;
 }
 
-.io3{
+.io3 {
     background-color: white;
     width: 327px;
     height: auto;
 }
 
-.dyrka{
+.dyrka {
     text-align: center;
     margin-top: 5px;
     font-size: 22px;
     font-weight: bold;
 }
 
-.morkovka{
+.morkovka {
     color: #00c6a9;
-    
-    
+
+
 }
 
-.superstar{
+.superstar {
     text-align: center;
     width: 100%;
     height: auto;
@@ -819,62 +844,58 @@ h4{
 
 
 
-.troksa{
+.troksa {
     padding-top: 10px;
     padding-bottom: 15px;
     font-size: 18px;
 }
-.haribo{
+
+.haribo {
     width: 100%;
     height: auto;
-    color: black;
+    color: rgb(0, 0, 0);
     gap: 10px;
     text-decoration: none;
     padding-right: 15px;
     margin-left: 10px;
 }
 
-.axer{
-    height: 20px;
+.axer {
+    height: 50px;
     background-color: white;
     padding: 17px 28px;
     position: relative;
     top: 160px;
     transition: color 0.3s ease;
-
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    left: 10px;
 
     background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%2300c6a9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(-90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
 
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 24px 24px;
-    
+    border: none;
 }
 
-.axel { 
-    height: 20px;
+.axel {
+    height: 50px;
     background-color: white;
     padding: 17px 28px;
     position: relative;
     top: 160px;
     transition: color 0.3s ease;
-
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    right: 10px;
 
     background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%2300c6a9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
 
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 24px 24px;
+    border: none;
 }
 
 
-.axer:hover{
+.axer:hover {
     background-color: #252525;
 
     background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(-90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
@@ -884,7 +905,7 @@ h4{
     background-size: 24px 24px;
 }
 
-.axel:hover{
+.axel:hover {
     background-color: #252525;
 
     background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
@@ -892,72 +913,72 @@ h4{
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 24px 24px;
-    
+
 }
 
-.bloodseeker{
+.bloodseeker {
     padding-top: 110px;
     margin-bottom: 90px;
 }
 
 /* testimonial */
 
-.skrytnost{
+.skrytnost {
     display: none;
 }
 
-.main6{
+.main6 {
     width: 100%;
     height: 500px;
 }
 
-.arbuzik{
+.arbuzik {
     margin: auto;
     width: 70%;
 }
 
-.pomidori{
+.pomidori {
     padding-top: 100px;
 }
 
-.ogurchikiiii{
+.ogurchikiiii {
     color: #00c6a9;
 }
 
-.baklazhan{
-    border:  1px black;
+.baklazhan {
+    border: 1px black;
     box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.2);
     padding: 30px;
 }
 
-.mandarinka4{
+.mandarinka4 {
     display: flex;
     justify-content: flex-end;
     height: 0px;
 }
 
-.klubnika{
+.klubnika {
     margin-top: -20px;
     font-size: 25px;
     color: #00c6a9;
 }
 
-.malina{
+.malina {
     color: #00c6a9;
     font-weight: bold;
     font-size: 20px;
 }
 
-.chereshnya{
+.chereshnya {
     color: rgba(0, 0, 0, 0.250);
     margin-top: 1px;
 }
 
-.vishnya{
+.vishnya {
     line-height: 1.7;
 }
 
-.syro4ekl{
+.syro4ekl {
     background-color: #00c6a9;
     padding: 17px 28px;
     height: 130px;
@@ -973,12 +994,12 @@ h4{
     background-repeat: no-repeat;
     background-position: right 2px center;
     background-size: 24px 24px;
-    
+
     background-size: 50px;
-    
+
 }
 
-.syro4ekr{
+.syro4ekr {
     background-color: #00c6a9;
     padding: 17px 28px;
     height: 130px;
@@ -997,48 +1018,48 @@ h4{
     background-size: 24px 24px;
 
     background-size: 50px;
-    
+
 }
 
-.pipiski{
+.pipiski {
     display: flex;
 }
 
-.burlyki{
+.burlyki {
     display: flex;
 
 }
 
 /* get in touch */
 
-.main7{
+.main7 {
     height: 580px;
     width: 100%;
 }
 
-.dobranoc{
+.dobranoc {
     width: 70%;
     margin: auto;
 }
 
 
-.bad{
+.bad {
     width: 60%;
     border: #00c6a9 1px solid;
     padding: 15px;
-    
+
 }
 
-.bad::placeholder{
+.bad::placeholder {
     color: #00c6a9;
 }
 
-.day{
+.day {
     width: 60%;
-    height: 70px;         
+    height: 70px;
     border: 1px solid #00c6a9;
     padding: 15px;
-    resize: none;          
+    resize: none;
     text-align: left;
     vertical-align: top;
     font-family: Noto Sans, sans-serif;
@@ -1048,29 +1069,32 @@ h4{
     transition: 0.1s ease;
 }
 
-.day::placeholder{
+.day::placeholder {
     color: #00c6a9;
     opacity: 1;
     transition: opacity 0.2s ease;
 }
-.day:focus{
+
+.day:focus {
     height: 110px;
     padding-top: 15px;
 }
-.day:focus::placeholder{
+
+.day:focus::placeholder {
     opacity: 0;
 }
-.kevin{
+
+.kevin {
     margin-top: -380px;
     display: flex;
     justify-content: flex-end;
 }
 
-.good_night{
+.good_night {
     padding-bottom: 25px;
 }
 
-.winks{
+.winks {
     text-decoration: none;
     border: solid 1px #00c6a9;
     color: white;
@@ -1079,24 +1103,16 @@ h4{
     font-weight: bold;
 }
 
-.feji{
+.feji {
     margin-top: 18px;
 }
 
 /* media */
 
-@media(min-width: 1200px){
-    
-}
+@media(min-width: 1200px) {}
 
-@media(min-width: 992px)and(max-width:1199px){
+@media(min-width: 992px)and(max-width:1199px) {}
 
-}
+@media(min-width:768px)and(max-width:991px) {}
 
-@media(min-width:768px)and(max-width:991px){
-
-}
-
-@media(max-width:767px){
-
-}
+@media(max-width:767px) {}
