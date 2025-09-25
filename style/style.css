@@ -21,7 +21,7 @@ header{
     margin: auto;
 }
 .fulll{
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 .color{
@@ -124,7 +124,7 @@ header{
 }
 
 .malekuly{
-    width: 50%;
+    width: 70%;
     margin: auto;
     display: flex;
 }
@@ -194,7 +194,7 @@ h5{
 }
 
 .pirog{
-    width: 50%;
+    width: 70%;
     margin: auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -327,7 +327,7 @@ h5::before{
 
 .papochka-blinchikov{
     display: flex;
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 
@@ -482,7 +482,7 @@ h5::before{
 
 }
 .mini{
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 h4{
@@ -504,13 +504,15 @@ h4{
 .dabltrack{
     display: flex;
     gap: 10px;
-
+    justify-content: center;
+   
 }
 
 .kontratrack{
     display: flex;
     gap: 10px;
     padding-bottom: 0px;
+    justify-content: center;
 
 }
 
@@ -586,9 +588,10 @@ input[type="date"] {
 
 .pupsikas{
     display: flex;
-    width: 50%;
+    width: 70%;
     margin: auto;
     gap: 60px;
+    justify-content: center;
 }
 
 .kaktus{
@@ -606,6 +609,34 @@ h4{
     line-height: 1.5;
     margin-top: -15px;
     color: rgba(0, 0, 0, 0.449);
+}
+.labuba2{
+    display: none;
+    width: 550px;
+    line-height: 1.5;
+    margin-top: -15px;
+    color: rgba(0, 0, 0, 0.449);
+    
+}
+
+.hide {
+    display: none;
+}
+
+.animacija {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+
+.animacija.show {
+    max-height: 500px;
+    opacity: 3;
+}
+.show {
+  display: block;
 }
 
 .shnobel{
@@ -636,7 +667,7 @@ h4{
 }
 
 .krovat{
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 
@@ -652,6 +683,23 @@ h4{
     margin-top: -16px;
 }
 
+.help2 {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    margin-top: 0;
+    margin-top: -15px;
+}
+
+
+.help2.show {
+    width: 70%;
+    max-height: 60px; 
+    opacity: 1;
+    visibility: visible;
+}
+
 .serdce{
     text-align: center;
 }
@@ -661,8 +709,11 @@ h4{
 }
 
 .gore{
+    border: none;
+    background: none;
     text-decoration: none;
     color: #00c6a9;
+    margin-left: -6px;
 }
 
 .gore:hover{
@@ -862,7 +913,7 @@ h4{
 
 .arbuzik{
     margin: auto;
-    width: 50%;
+    width: 70%;
 }
 
 .pomidori{
@@ -966,7 +1017,7 @@ h4{
 }
 
 .dobranoc{
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 
