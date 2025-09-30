@@ -4,11 +4,20 @@
 h4{
     margin-top: 170px;
 }
+
 .main7 {
-    height: 580px;
+    height: 650px;
     width: 100%;
 }
-
+ .error {
+      border: 2px solid red !important;
+    }
+    .error-message {
+      color: red;
+      font-size: 12px;
+      margin-top: 4px;
+      font-family: sans-serif;
+    }
 .dobranoc {
     width: 70%;
     margin: auto;

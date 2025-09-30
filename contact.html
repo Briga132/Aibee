@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/contact.css">
-    <script src="script/script.js" defer></script>
+    <script src="script/contact.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
 </head>
 <body>
@@ -81,6 +81,7 @@
                 
     </header>
     <section class="main7">
+
                 <!-- get in touch (contact) -->
             <div class="dobranoc">
                 <div class="neoangin">
@@ -89,29 +90,36 @@
                     </div>
                         <div class="armor">
                             <div class="good_night">
-                                <input class="bad" type="text" placeholder="Full Name" />
+                                <input id="name" class="bad" type="text" placeholder="Full Name" autocomplete="name"/>
+                                <div class="error-message" id="error-name"></div>
                             </div>
                             <div class="good_night">
-                                <input class="bad" type="email" placeholder="Email" />
+                                <input id="email" class="bad" type="email" placeholder="Email" autocomplete="email"/>
+                                <div class="error-message" id="error-email"></div>
                             </div>
                             <div class="good_night">
-                                <input class="bad" type="text" placeholder="Phone Number" />
+                                <input id="phone" class="bad" type="text" placeholder="Phone Number" autocomplete="photo"/>
+                                <div class="error-message" id="error-phone"></div>
                             </div>
                             <div class="good_night">
-                                <input class="day" type="text" class="message-box" placeholder="Message" />
+                                <textarea id="message" class="day" placeholder="Message"></textarea>
+                                <div class="error-message" id="error-message"></div>
                             </div>
-                        </div>
+                            </div>
 
-                    <div class="feji"><a href="#" class="winks">SEND</a></div>
+                            <div class="feji">
+                            <a href="#" id="sendBtn" class="winks">SEND</a>
+                            </div>
                 </div>
                     <div class="kevin">
                         <div class="batmen"><img class="batmobil" src="img/contact-img.jpg" alt=""></div>
+                        <a class="fnaf2" href=""><img class="fnaf"></a>
                     </div>
 
                     
             </div>
      </section>
-
+    </main>
     <!-- footer -->
        <footer class="end">
     <div class="obshirnoe">

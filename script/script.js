@@ -1,3 +1,5 @@
+  
+  // about hospital
   $(".bobel").click(function()
   {
       $(".labuba2").toggle('show')
@@ -26,7 +28,7 @@
     });
 
 
-
+// hospital treatment
     document.addEventListener('DOMContentLoaded', function () {
         const buttons = document.querySelectorAll('.gore');
 
@@ -53,69 +55,76 @@
             });
         });
     });
-document.getElementById('sendBtn').addEventListener('click', function(event) {
-  event.preventDefault();
 
-  const inputName = document.getElementById('name');
-  const inputEmail = document.getElementById('email');
-  const inputPhone = document.getElementById('phone');
-  const inputMessage = document.getElementById('message');
+
+  // GET IN TOUCH
+document.getElementById('sendBtn').addEventListener('click', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const phone = document.getElementById('phone');
+  const message = document.getElementById('message');
 
   const errorName = document.getElementById('error-name');
   const errorEmail = document.getElementById('error-email');
   const errorPhone = document.getElementById('error-phone');
   const errorMessage = document.getElementById('error-message');
 
-  [inputName, inputEmail, inputPhone, inputMessage].forEach(field => field.classList.remove('error'));
-  [errorName, errorEmail, errorPhone, errorMessage].forEach(errorField => errorField.textContent = '');
+  name.classList.remove('error');
+  email.classList.remove('error');
+  phone.classList.remove('error');
+  message.classList.remove('error');
 
-  let formHasErrors = false;
+  errorName.textContent = '';
+  errorEmail.textContent = '';
+  errorPhone.textContent = '';
+  errorMessage.textContent = '';
 
-  const nameValue = inputName.value.trim();
-  const namePattern = /^[A-ZА-Я][a-zа-яA-ZА-Я]*$/;
+  let hasErrors = false;
+
+  const nameValue = name.value.trim();
   if (nameValue === '') {
-    inputName.classList.add('error');
-    errorName.textContent = 'Please enter your name';
-    formHasErrors = true;
-  } else if (!namePattern.test(nameValue)) {
-    inputName.classList.add('error');
-    errorName.textContent = 'Name should start with a capital letter and contain only letters';
-    formHasErrors = true;
+    errorName.textContent = 'Įveskite vardą';
+    name.classList.add('error');
+    hasErrors = true;
+  } else if (!/^[A-ZĄČĘĖĮŠŲŪŽ][a-ząčęėįšųūž]+$/.test(nameValue)) {
+    errorName.textContent = 'Vardas turi prasidėti didžiąja raide ir būti be skaičių';
+    name.classList.add('error');
+    hasErrors = true;
   }
 
-  const emailValue = inputEmail.value.trim();
-  const emailPattern = /^[^@]+@[^@]+\.[^@]+$/;
+  const emailValue = email.value.trim();
   if (emailValue === '') {
-    inputEmail.classList.add('error');
-    errorEmail.textContent = 'Please enter your email';
-    formHasErrors = true;
-  } else if (!emailPattern.test(emailValue)) {
-    inputEmail.classList.add('error');
-    errorEmail.textContent = 'Email must be valid and contain a domain (e.g. gmail.com)';
-    formHasErrors = true;
+    errorEmail.textContent = 'Įveskite el. paštą';
+    email.classList.add('error');
+    hasErrors = true;
+  } else if (!/^[^@]+@[^@]+\.[^@]+$/.test(emailValue)) {
+    errorEmail.textContent = 'El. paštas turi būti teisingas (pvz., vardas@gmail.com)';
+    email.classList.add('error');
+    hasErrors = true;
   }
 
-  const phoneValue = inputPhone.value.trim();
-  const phonePattern = /^\+?\d+$/;
+  const phoneValue = phone.value.trim();
   if (phoneValue === '') {
-    inputPhone.classList.add('error');
-    errorPhone.textContent = 'Please enter your phone number';
-    formHasErrors = true;
-  } else if (!phonePattern.test(phoneValue)) {
-    inputPhone.classList.add('error');
-    errorPhone.textContent = 'Phone number should start with "+"';
-    formHasErrors = true;
+    errorPhone.textContent = 'Įveskite telefono numerį';
+    phone.classList.add('error');
+    hasErrors = true;
+  } else if (!/^\+?\d+$/.test(phoneValue)) {
+    errorPhone.textContent = 'Telefono numeris turi prasidėti „+“ ir būti tik iš skaičių';
+    phone.classList.add('error');
+    hasErrors = true;
   }
 
-  const messageValue = inputMessage.value.trim();
+  const messageValue = message.value.trim();
   if (messageValue === '') {
-    inputMessage.classList.add('error');
-    errorMessage.textContent = 'Please enter your message';
-    formHasErrors = true;
+    errorMessage.textContent = 'Parašykite žinutę';
+    message.classList.add('error');
+    hasErrors = true;
   }
 
-  if (!formHasErrors) {
-    alert('Form submitted successfully!');
+  if (!hasErrors) {
+    alert('Forma sėkmingai išsiųsta! Ačiū :)');
   }
 });
 document.addEventListener("DOMContentLoaded", () => {
@@ -182,3 +191,9 @@ document.addEventListener("DOMContentLoaded", () => {
         setStartPosition();
     });
 });
+
+// book apointment
+document.getElementById('btn').addEventListener('click', function() {
+  alert('Sėkmingai išsiųsta! Ačiū :)');
+});
+
