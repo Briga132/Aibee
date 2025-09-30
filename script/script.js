@@ -53,5 +53,68 @@
             });
         });
     });
+document.getElementById('sendBtn').addEventListener('click', function(event) {
+  event.preventDefault();
 
+  const inputName = document.getElementById('name');
+  const inputEmail = document.getElementById('email');
+  const inputPhone = document.getElementById('phone');
+  const inputMessage = document.getElementById('message');
 
+  const errorName = document.getElementById('error-name');
+  const errorEmail = document.getElementById('error-email');
+  const errorPhone = document.getElementById('error-phone');
+  const errorMessage = document.getElementById('error-message');
+
+  [inputName, inputEmail, inputPhone, inputMessage].forEach(field => field.classList.remove('error'));
+  [errorName, errorEmail, errorPhone, errorMessage].forEach(errorField => errorField.textContent = '');
+
+  let formHasErrors = false;
+
+  const nameValue = inputName.value.trim();
+  const namePattern = /^[A-ZА-Я][a-zа-яA-ZА-Я]*$/;
+  if (nameValue === '') {
+    inputName.classList.add('error');
+    errorName.textContent = 'Please enter your name';
+    formHasErrors = true;
+  } else if (!namePattern.test(nameValue)) {
+    inputName.classList.add('error');
+    errorName.textContent = 'Name should start with a capital letter and contain only letters';
+    formHasErrors = true;
+  }
+
+  const emailValue = inputEmail.value.trim();
+  const emailPattern = /^[^@]+@[^@]+\.[^@]+$/;
+  if (emailValue === '') {
+    inputEmail.classList.add('error');
+    errorEmail.textContent = 'Please enter your email';
+    formHasErrors = true;
+  } else if (!emailPattern.test(emailValue)) {
+    inputEmail.classList.add('error');
+    errorEmail.textContent = 'Email must be valid and contain a domain (e.g. gmail.com)';
+    formHasErrors = true;
+  }
+
+  const phoneValue = inputPhone.value.trim();
+  const phonePattern = /^\+?\d+$/;
+  if (phoneValue === '') {
+    inputPhone.classList.add('error');
+    errorPhone.textContent = 'Please enter your phone number';
+    formHasErrors = true;
+  } else if (!phonePattern.test(phoneValue)) {
+    inputPhone.classList.add('error');
+    errorPhone.textContent = 'Phone number should start with "+"';
+    formHasErrors = true;
+  }
+
+  const messageValue = inputMessage.value.trim();
+  if (messageValue === '') {
+    inputMessage.classList.add('error');
+    errorMessage.textContent = 'Please enter your message';
+    formHasErrors = true;
+  }
+
+  if (!formHasErrors) {
+    alert('Form submitted successfully!');
+  }
+});
