@@ -2,31 +2,34 @@ document.addEventListener("DOMContentLoaded", () => {
     const track = document.querySelector('.darkwillow');
     const prev = document.querySelector('.axel');
     const next = document.querySelector('.axer');
-    const slides = Array.from(track.children).slice(0, 3);
-    const visibleSlides = 3;
 
-    let slideWidth = slides[0].offsetWidth + 15;
-    let index = visibleSlides; 
+    const originalSlides = Array.from(track.children).slice(0, 3);
+    const visibleSlides = 4;
+    const cloneCount = 4;
 
-    const prepend = slides.slice(-visibleSlides).map(s => s.cloneNode(true));
-    const append = slides.slice(0, visibleSlides).map(s => s.cloneNode(true));
-    prepend.forEach(clone => track.insertBefore(clone, track.firstChild));
-    append.forEach(clone => track.appendChild(clone));
+    let slideWidth = originalSlides[0].offsetWidth + 15;
+    let index = cloneCount;
+
+    const clonesStart = originalSlides.slice(-cloneCount).map(card => card.cloneNode(true));
+    clonesStart.forEach(clone => track.insertBefore(clone, track.firstChild));
+
+    const clonesEnd = originalSlides.slice(0, cloneCount).map(card => card.cloneNode(true));
+    clonesEnd.forEach(clone => track.appendChild(clone));
 
     const totalSlides = track.children.length;
 
-    function setInitialPosition() {
+    function setStartPosition() {
         track.style.transition = 'none';
         track.style.transform = `translateX(-${slideWidth * index}px)`;
     }
 
-    setInitialPosition();
+    setStartPosition();
 
-    let isAnimating = false;
+    let isMoving = false;
 
-    function slideTo(newIndex) {
-        if (isAnimating) return;
-        isAnimating = true;
+    function moveTo(newIndex) {
+        if (isMoving) return;
+        isMoving = true;
 
         track.style.transition = 'transform 0.4s ease-in-out';
         track.style.transform = `translateX(-${slideWidth * newIndex}px)`;
@@ -34,26 +37,28 @@ document.addEventListener("DOMContentLoaded", () => {
         track.addEventListener('transitionend', function handler() {
             track.removeEventListener('transitionend', handler);
 
-            if (newIndex <= visibleSlides - 1) {
-                newIndex += slides.length; 
+            if (newIndex < cloneCount) {
+                newIndex += originalSlides.length;
                 track.style.transition = 'none';
                 track.style.transform = `translateX(-${slideWidth * newIndex}px)`;
-            } else if (newIndex >= slides.length + visibleSlides) {
-                newIndex -= slides.length; 
+            }
+
+            if (newIndex >= originalSlides.length + cloneCount) {
+                newIndex -= originalSlides.length;
                 track.style.transition = 'none';
                 track.style.transform = `translateX(-${slideWidth * newIndex}px)`;
             }
 
             index = newIndex;
-            isAnimating = false;
+            isMoving = false;
         });
     }
 
-    next.addEventListener('click', () => slideTo(index + 1));
-    prev.addEventListener('click', () => slideTo(index - 1));
+    next.addEventListener('click', () => moveTo(index + 1));
+    prev.addEventListener('click', () => moveTo(index - 1));
 
     window.addEventListener('resize', () => {
-        slideWidth = slides[0].offsetWidth + 15;
-        setInitialPosition();
+        slideWidth = originalSlides[0].offsetWidth + 15;
+        setStartPosition();
     });
 });

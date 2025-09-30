@@ -127,6 +127,8 @@ document.getElementById('sendBtn').addEventListener('click', function(e) {
     alert('Forma sėkmingai išsiųsta! Ačiū :)');
   }
 });
+
+// our doctors
 document.addEventListener("DOMContentLoaded", () => {
     const track = document.querySelector('.darkwillow');
     const prev = document.querySelector('.axel');
@@ -192,8 +194,65 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+
 // book apointment
-document.getElementById('btn').addEventListener('click', function() {
-  alert('Sėkmingai išsiųsta! Ačiū :)');
+
+document.getElementById('btn').addEventListener('click', function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById('originalPatientName');
+  const doctor = document.getElementById('originalDoctorName');
+  const department = document.getElementById('originalDepartmentName');
+  const phone = document.getElementById('originalPhone');
+  const symptoms = document.getElementById('originalSymptoms');
+  const date = document.getElementById('date');
+
+  const fields = [name, doctor, department, phone, symptoms, date];
+  let hasEmpty = false;
+
+  fields.forEach(field => {
+    if (!field.value.trim()) {
+      field.classList.add('error-border');
+      hasEmpty = true;
+    } else {
+      field.classList.remove('error-border');
+    }
+  });
+
+ 
+  const phoneValue = phone.value.trim();
+  const plusCount = (phoneValue.match(/\+/g) || []).length;
+  const phoneError = plusCount > 1 || (plusCount === 1 && !phoneValue.startsWith('+'));
+
+
+  const nameValue = name.value.trim();
+  const nameError = nameValue && nameValue[0] !== nameValue[0].toUpperCase();
+
+  if (phoneError) {
+    phone.classList.add('error-border');
+    alert('Telefono numeris turi prasidėti vienu „+“ simboliu ir be papildomų pliusų.');
+    return;
+  }
+
+  if (nameError) {
+    name.classList.add('error-border');
+    alert('Vardas turi prasidėti didžiąja raide.');
+    return;
+  }
+
+  if (hasEmpty) {
+    alert('Nepavyko išsiųsti. Užpildykite visus laukus!');
+  } else {
+    alert('Sėkmingai išsiųsta! Ačiū :)');
+  }
 });
 
+
+document.getElementById('originalSymptoms').addEventListener('input', function () {
+  const value = this.value;
+  this.value = value.charAt(0).toUpperCase() + value.slice(1);
+});
+
+
+// mico hospital
