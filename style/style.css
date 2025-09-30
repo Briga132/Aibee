@@ -781,9 +781,8 @@ h4 {
 
 .azuki {
     display: flex;
-    width: 46%;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 
@@ -1018,10 +1017,18 @@ h4 {
 /* get in touch */
 
 .main7 {
-    height: 580px;
+    height: 650px;
     width: 100%;
 }
-
+ .error {
+      border: 2px solid red !important;
+    }
+    .error-message {
+      color: red;
+      font-size: 12px;
+      margin-top: 4px;
+      font-family: sans-serif;
+    }
 .dobranoc {
     width: 70%;
     margin: auto;

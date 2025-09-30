@@ -6,9 +6,8 @@
     <title>Aibe</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style/index.css">
     <script src="script/script.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
 </head>
 <body>
     <!-- header -->
@@ -229,11 +228,11 @@
         <div class="drotiki">
     <div class="dabltrack">
             <div class="lb1">
-                   <br><label class="cheburek" for="inputPatientName">Patient Name</label><br>
+                   <br><span class="cheburek" for="inputPatientName">Patient Name</span><br>
                     <input type="text" class="sarai" id="originalPatientName" placeholder="">
             </div>
             <div class="lb2">
-                <br><label class="cheburek" for="inputDoctorName">Doctor's Name</label><br>
+                <br><span class="cheburek" for="inputDoctorName">Doctor's Name</span><br>
                     <select name="" class="saraii" id="originalDoctorName">
                     <option value="Normal distribution ">Normal distribution </option>
                     <option value="Normal distribution ">Normal distribution </option>
@@ -241,7 +240,7 @@
                     </select>
             </div>
             <div class="lb3">
-                <br><label class="cheburek" for="inputDepartmentName">Department's Name</label><br>
+                <br><span class="cheburek" for="inputDepartmentName">Department's Name</span><br>
                     <select name="" class="saraii" id="originalDepartmentName">
                     <option  value="Normal distribution ">Normal distribution </option>
                     <option value="Normal distribution ">Normal distribution </option>
@@ -251,15 +250,15 @@
     </div>
     <div class="kontratrack">
             <div class="lb4">
-                <br><label class="cheburek" for="inputPhone">Phone Number</label><br>
+                <br><span class="cheburek" for="inputPhone">Phone Number</span><br>
                     <input type="number" class="sarai" id="originalPhone" placeholder="XXXXXXXXXX">
             </div>
             <div class="lb5">
-                <br><label class="cheburek" for="inputSymptoms">Symptoms</label><br>
+                <br><span class="cheburek" for="inputSymptoms">Symptoms</span><br>
                     <input type="text" class="sarai" id="originalSymptoms" placeholder="">
             </div>
             <div class="lb6">
-                <br><label class="cheburek" for="inputDate">Choose Date </label><br>
+                <br><span class="cheburek" for="inputDate">Choose Date </span><br>
                     <div class="data" id="Date" data-date-format="mm-dd-yyyy">
                     <input type="date" id="date" class="sarai" name="date">
                     </div>
@@ -573,6 +572,7 @@
                 </div>
      </section>
      <section class="main7">
+
                 <!-- get in touch (contact) -->
             <div class="dobranoc">
                 <div class="neoangin">
@@ -581,20 +581,26 @@
                     </div>
                         <div class="armor">
                             <div class="good_night">
-                                <input class="bad" type="text" placeholder="Full Name" />
+                                <input id="name" class="bad" type="text" placeholder="Full Name" autocomplete="name"/>
+                                <div class="error-message" id="error-name"></div>
                             </div>
                             <div class="good_night">
-                                <input class="bad" type="email" placeholder="Email" />
+                                <input id="email" class="bad" type="email" placeholder="Email" autocomplete="email"/>
+                                <div class="error-message" id="error-email"></div>
                             </div>
                             <div class="good_night">
-                                <input class="bad" type="text" placeholder="Phone Number" />
+                                <input id="phone" class="bad" type="text" placeholder="Phone Number" autocomplete="photo"/>
+                                <div class="error-message" id="error-phone"></div>
                             </div>
                             <div class="good_night">
-                              <textarea class="day"  placeholder="Message"></textarea>
+                                <textarea id="message" class="day" placeholder="Message"></textarea>
+                                <div class="error-message" id="error-message"></div>
                             </div>
-                        </div>
+                            </div>
 
-                    <div class="feji"><a href="#" class="winks">SEND</a></div>
+                            <div class="feji">
+                            <a href="#" id="sendBtn" class="winks">SEND</a>
+                            </div>
                 </div>
                     <div class="kevin">
                         <div class="batmen"><img class="batmobil" src="img/contact-img.jpg" alt=""></div>
@@ -617,7 +623,7 @@
         </div>
             <div class="atom">
                 <form class="minatom" action="">
-                    <input class="mandarin" type="email" placeholder="Your email">
+                    <input id="mada" class="mandarin" type="email" placeholder="Your email">
                     <a href="index.html" class="knopka">
                         SUBSCRIBE
                     </a>
