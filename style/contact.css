@@ -4,3 +4,77 @@
 h4{
     margin-top: 170px;
 }
+.main7 {
+    height: 580px;
+    width: 100%;
+}
+
+.dobranoc {
+    width: 70%;
+    margin: auto;
+}
+
+
+.bad {
+    width: 60%;
+    border: #00c6a9 1px solid;
+    padding: 15px;
+
+}
+
+.bad::placeholder {
+    color: #00c6a9;
+}
+
+.day {
+    width: 60%;
+    height: 70px;
+    border: 1px solid #00c6a9;
+    padding: 15px;
+    resize: none;
+    text-align: left;
+    vertical-align: top;
+    font-family: Noto Sans, sans-serif;
+    font-size: 14px;
+    padding-top: 55px;
+    padding-left: 15px;
+    transition: 0.1s ease;
+}
+
+.day::placeholder {
+    color: #00c6a9;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.day:focus {
+    height: 110px;
+    padding-top: 15px;
+}
+
+.day:focus::placeholder {
+    opacity: 0;
+}
+
+.kevin {
+    margin-top: -380px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.good_night {
+    padding-bottom: 25px;
+}
+
+.winks {
+    text-decoration: none;
+    border: solid 1px #00c6a9;
+    color: white;
+    padding: 18px 58px;
+    background-color: #00c6a9;
+    font-weight: bold;
+}
+
+.feji {
+    margin-top: 18px;
+}

@@ -776,55 +776,49 @@ h4 {
     text-align: center;
     color: white;
 
-
 }
 
 .azuki {
-    display: flex;
-    margin: auto;
-    justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1144px; 
+  margin: auto;
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+  scrollbar-width: none; 
 }
 
-
+.azuki::-webkit-scrollbar {
+  display: none; 
+}
 
 .slider-window {
+    width: calc(327px * 3 + 15px * 2); 
     overflow: hidden;
     position: relative;
-    padding-top: 60px; /* ↑ даём место для фоток "сверху" */
-}
-
-
-/* Обёртка вокруг карточек */
-.slider-window {
-    width: 1011px; /* 3 карточки по 327px + 2 gap (15px) */
-    overflow: hidden;
-    position: relative;
-    padding-top: 60px; /* позволяет фотке "вылазить" наверх */
+    padding-top: 60px; 
     margin: auto;
+    height: 330px; 
 }
 
-/* Контейнер с карточками */
 .darkwillow {
     display: flex;
     gap: 15px;
     transition: transform 0.4s ease-in-out;
 }
 
-/* Стиль самих карточек */
 .io1, .io2, .io3 {
+    flex: 0 0 auto; 
+}
+
+
+.io1 {
+    background-color: rgb(255, 255, 255);
     width: 327px;
-    flex: 0 0 auto;
-    background-color: white;
-    border-radius: 5px;
+    height: auto;
 }
 
-/* Контейнер карточки */
-.belyj.fon {
-    position: relative;
-    overflow: visible;
-}
-
-/* Фото внутри карточки — ВЫЛЕЗАЕТ вверх */
 .pops {
     padding: 11px;
     margin-top: -55px;
@@ -832,7 +826,18 @@ h4 {
     height: 270px;
 }
 
-/* Текст карточки */
+.io2 {
+    background-color: white;
+    width: 327px;
+    height: auto;
+}
+
+.io3 {
+    background-color: white;
+    width: 327px;
+    height: auto;
+}
+
 .dyrka {
     text-align: center;
     margin-top: 5px;
@@ -842,13 +847,18 @@ h4 {
 
 .morkovka {
     color: #00c6a9;
+
 }
 
 .superstar {
     text-align: center;
+    width: 100%;
+    height: auto;
     font-size: 20px;
     padding-bottom: 20px;
 }
+
+
 
 .troksa {
     padding-top: 10px;
@@ -857,52 +867,69 @@ h4 {
 }
 
 .haribo {
-    color: black;
+    width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    gap: 10px;
     text-decoration: none;
     padding-right: 15px;
     margin-left: 10px;
 }
 
-/* Кнопки влево/вправо */
-.axel, .axer {
+.axer {
     height: 50px;
     background-color: white;
     padding: 17px 28px;
     position: relative;
-    top: 160px;
-    transition: background-color 0.3s ease;
+    top: 180px;
+    transition: color 0.3s ease;
+
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%2300c6a9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(-90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
     border: none;
-    z-index: 10;
 }
 
 .axel {
-    right: 10px;
-    background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='%2300c6a9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g transform='rotate(90 12 12)'><polyline points='6 9 12 15 18 9'/></g></svg>");
+    height: 50px;
+    background-color: white;
+    padding: 17px 28px;
+    position: relative;
+    top: 180px;
+    transition: color 0.3s ease;
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%2300c6a9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 24px 24px;
+    border: none;
 }
 
-.axer {
-    left: 10px;
-    background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='%2300c6a9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g transform='rotate(-90 12 12)'><polyline points='6 9 12 15 18 9'/></g></svg>");
-    background-repeat: no-repeat;
-    background-position: right 15px center;
-    background-size: 24px 24px;
-}
 
-.axel:hover, .axer:hover {
+.axer:hover {
     background-color: #252525;
-    background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g transform='ROTATE' ><polyline points='6 9 12 15 18 9'/></g></svg>");
+
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(-90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 24px 24px;
 }
 
+.axel:hover {
+    background-color: #252525;
+
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+}
 
 .bloodseeker {
     padding-top: 110px;
-    margin-bottom: 90px;
 }
 
 /* testimonial */
@@ -1017,18 +1044,10 @@ h4 {
 /* get in touch */
 
 .main7 {
-    height: 650px;
+    height: 580px;
     width: 100%;
 }
- .error {
-      border: 2px solid red !important;
-    }
-    .error-message {
-      color: red;
-      font-size: 12px;
-      margin-top: 4px;
-      font-family: sans-serif;
-    }
+
 .dobranoc {
     width: 70%;
     margin: auto;
