@@ -57,8 +57,9 @@
     });
 
 
+
   // GET IN TOUCH
-document.getElementById('sendBtn').addEventListener('click', function(e) {
+document.getElementById('btnnn').addEventListener('click', function(e) {
   e.preventDefault();
 
   const name = document.getElementById('name');
@@ -198,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // book apointment
 
-document.getElementById('btn').addEventListener('click', function (e) {
+document.getElementById('btnnn').addEventListener('click', function (e) {
   e.preventDefault();
 
   const name = document.getElementById('originalPatientName');
@@ -261,3 +262,28 @@ document.getElementById('originalSymptoms').addEventListener('input', function (
 });
 
 // mico hospital
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".vosvagen");
+    const prevBtn = document.getElementById("arrowL");
+    const nextBtn = document.getElementById("arrowR");
+
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+      });
+    }
+
+    showSlide(currentIndex);
+
+    prevBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    });
+
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    });
+  });
