@@ -261,3 +261,38 @@ document.getElementById('originalSymptoms').addEventListener('input', function (
 });
 
 // mico hospital
+
+// testinimonial 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".burlyki");
+    const leftBtn = document.querySelector(".syro4ekr");
+    const rightBtn = document.querySelector(".syro4ekl");
+
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            if (i === index) {
+                slide.style.display = "flex";
+                slide.classList.remove("skrytnost");
+            } else {
+                slide.style.display = "none";
+                slide.classList.add("skrytnost");
+            }
+        });
+    }
+
+    leftBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    });
+
+    rightBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    });
+
+    showSlide(currentIndex); 
+});
+
