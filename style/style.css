@@ -378,6 +378,9 @@ h5::before {
     line-height: 1;
 }
 
+.cvetochki{
+    color: white;
+}
 .dell {
     color: #00c6a9;
 }
@@ -1052,22 +1055,23 @@ h4 {
 
 /* get in touch */
 
-.error {
-  border: 1px solid red;
+.main7{
+    height: 790px;
 }
-
-.error-message {
-  color: red;
-  font-size: 12px;
-  margin-top: 2px;
-}
-
 
 .main7 {
-    height: 580px;
+    height: 790px;
     width: 100%;
 }
-
+ .error {
+      border: 2px solid red !important;
+    }
+    .error-message {
+      color: red;
+      font-size: 12px;
+      margin-top: 4px;
+      font-family: sans-serif;
+    }
 .dobranoc {
     width: 70%;
     margin: auto;
@@ -1137,6 +1141,7 @@ h4 {
 .feji {
     margin-top: 18px;
 }
+
 
 /* media */
 
