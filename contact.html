@@ -59,18 +59,15 @@
                     </li>
                 </ul> 
             <div class="pechenka">
-                <a href="#">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <span>
-                        LOGIN
-                    </span>
-                </a>
-                <a href="#">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <span>
-                        SIGN UP
-                    </span>
-                </a>
+                    <a href="#" id="login-btn">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <span>LOGIN</span>
+                    </a>
+                    <a href="#" id="signup-btn">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <span>SIGN UP</span>
+                    </a>
+                        </div>
                 <form class="polpichenki">
                     <button class="btn" type="submit">
                         <i class="fa fa-search" aria-hidden="true"></i>
@@ -279,5 +276,26 @@
             </p>
         </div>
     </footer>
+       <div id="modal" class="modal-overlay hidden">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <div class="modal-header">Welcome</div>
+    <div class="toggle-buttons">
+      <button id="login-btn-modal" class="active">Login</button>
+      <button id="signup-btn-modal">Sign Up</button>
+    </div>
+    <form id="login-form" style="display: flex; flex-direction: column;">
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+    <form id="signup-form" style="display: none; flex-direction: column;">
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="submit-btn">Sign Up</button>
+    </form>
+  </div>
+</div>
 </body>
 </html>
