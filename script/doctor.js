@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setStartPosition();
     });
 });
+
 // login/sign-up
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('modal');
