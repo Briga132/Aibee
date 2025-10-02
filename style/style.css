@@ -502,15 +502,62 @@ h5::before {
     height: 630px;
     box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.2);
 }
-.vosvagen{
-    display: none;
+ 
+.pursik{
+    color: white;
 }
+.vosvagen {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(20px);
+  position: absolute;
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+ 
+.vosvagen.active {
+  opacity: 1;
+  transform: translateY(0);
+  display: flex;
+  width: 70%;
+  margin: auto;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+ 
+}
+ 
+ 
+.fulvolsvagen {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+ 
+.trakingvolt {
+  display: flex;
+  transition: transform 0.6s ease;
+  width: 70%;
+  margin: auto;
+}
+ 
+.vosvagen {
+  flex: 0 0 100%;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+ 
+ 
 .papochka-blinchikov {
     display: flex;
-    width: 70%;
     margin: auto;
+    width: 100%;
 }
-
+ 
 .mochi {
     width: 65px;
     height: 65px;
@@ -523,47 +570,47 @@ h5::before {
     position: relative;
     animation: aura 2s infinite ease-in-out;
 }
-
+ 
 .my-icon {
     transform: scale(1.3);
 }
-
+ 
 @keyframes aura {
     0% {
         box-shadow: 0 0 0px 0 rgba(0, 198, 169, 0.7);
     }
-
+ 
     50% {
         box-shadow: 0 0 0px 15px rgba(0, 198, 169, 0);
     }
-
+ 
     100% {
         box-shadow: 0 0 0px 0 rgba(0, 198, 169, 0);
     }
 }
-
-
+ 
+ 
 .zelionka {
     font-family: Noto Sans, sans-serif;
     margin-top: 50px;
     font-size: 47px;
     line-height: 1;
 }
-
+ 
 .cvetochki{
     color: white;
 }
 .dell {
     color: #00c6a9;
 }
-
+ 
 .paliruj {
     font-family: Noto Sans, sans-serif;
     width: 80%;
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.609);
 }
-
+ 
 .topchik {
     text-decoration: none;
     border: solid 1px black;
@@ -574,62 +621,62 @@ h5::before {
     font-family: Noto Sans, sans-serif;
     transition: color 0.3s ease;
 }
-
+ 
 .topchik:hover {
     background-color: black;
 }
-
-
+ 
+ 
 .bortiki {
     margin-top: 50px;
-
+ 
 }
-
+ 
 .wsio-ili-nechewo {
     z-index: 2;
 }
-
+ 
 .hachapuri {
     width: 580px;
     height: 150;
 }
-
+ 
 .venera {
-
+ 
     width: 25px;
     height: 25px;
     z-index: 2;
 }
-
+ 
 .mars {
-
+ 
     width: 25px;
     height: 25px;
     margin-right: 35px;
     z-index: 2;
 }
-
+ 
 .jupiter {
     background-color: #00c6a9;
     width: 10px;
     height: 15px;
     padding: 17px 20px;
     transition: color 0.3s ease;
-
+ 
 }
-
+ 
 .jupiter:hover {
     background-color: black;
-
+ 
 }
-
+ 
 .kosmos {
     display: flex;
     margin-top: 70px;
     justify-content: flex-end;
     margin-right: 410px;
 }
-
+ 
 /* img */
 .dots {
     width: 100%;
@@ -641,20 +688,22 @@ h5::before {
     z-index: 1;
     pointer-events: none;
 }
-
+ 
 .dota {
     width: 600px;
 }
-
+ 
 #arrowL {
     border: none;
     background-color: unset;
 }
-
+ 
 #arrowR {
     border: none;
     background-color: unset;
 }
+ 
+ 
 
 /* section 2 book apointment */
 .main2 {

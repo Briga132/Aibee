@@ -271,6 +271,28 @@ if (symptomsEl) {
 }
 
 // mico hospital
+  const slides = document.querySelectorAll('.vosvagen');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  document.getElementById('arrowL').addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  });
+
+  document.getElementById('arrowR').addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentSlide);
+});
 
 // testinimonial
 document.addEventListener("DOMContentLoaded", function () {
