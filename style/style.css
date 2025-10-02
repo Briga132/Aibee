@@ -804,7 +804,7 @@ h4 {
     position: relative;
     padding-top: 60px; 
     margin: auto;
-    height: 330px; 
+    height: 380px; 
 }
 
 .darkwillow {
@@ -886,7 +886,7 @@ h4 {
     background-color: white;
     padding: 17px 28px;
     position: relative;
-    top: 180px;
+    top: 220px;
     transition: color 0.3s ease;
 
     background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%2300c6a9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(-90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
@@ -902,7 +902,7 @@ h4 {
     background-color: white;
     padding: 17px 28px;
     position: relative;
-    top: 180px;
+    top: 220px;
     transition: color 0.3s ease;
     background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%2300c6a9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
 
