@@ -330,13 +330,56 @@ h5::before {
 .pursik{
     color: white;
 }
-.vosvagen{
-    display: none;
+.vosvagen {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(20px);
+  position: absolute;
+  width: 70%;
+  margin: auto;
+  display: flex;
 }
+
+.vosvagen.active {
+  opacity: 1;
+  transform: translateY(0);
+  display: flex;
+  width: 70%;
+  margin: auto;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+
+}
+
+
+.fulvolsvagen {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.trakingvolt {
+  display: flex;
+  transition: transform 0.6s ease;
+  width: 70%;
+  margin: auto;
+}
+
+.vosvagen {
+  flex: 0 0 100%;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+
 .papochka-blinchikov {
     display: flex;
-    width: 70%;
     margin: auto;
+    width: 100%;
 }
 
 .mochi {

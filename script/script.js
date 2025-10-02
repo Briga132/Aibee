@@ -262,28 +262,29 @@ document.getElementById('originalSymptoms').addEventListener('input', function (
 });
 
 // mico hospital
-document.addEventListener("DOMContentLoaded", () => {
-    const slides = document.querySelectorAll(".vosvagen");
-    const prevBtn = document.getElementById("arrowL");
-    const nextBtn = document.getElementById("arrowR");
+  const slides = document.querySelectorAll('.vosvagen');
+  let currentSlide = 0;
 
-    let currentIndex = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index);
-      });
-    }
-
-    showSlide(currentIndex);
-
-    prevBtn.addEventListener("click", () => {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      showSlide(currentIndex);
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
     });
+  }
 
-    nextBtn.addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % slides.length;
-      showSlide(currentIndex);
-    });
+  document.getElementById('arrowL').addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
   });
+
+  document.getElementById('arrowR').addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentSlide);
+  });
+
+
+// slide
+
