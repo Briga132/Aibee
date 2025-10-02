@@ -1,9 +1,8 @@
 // about hospital
-$(".bobel").click(function()
-{
-    $(".labuba2").toggle('show')
-}
-)
+$(".bobel").click(function () {
+  $(".labuba2").toggle('show');
+});
+
 
 const button = document.querySelector('.bobel');
 const dots = document.querySelector('.labuba3');
@@ -57,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-<<<<<<< HEAD
 
 
 
@@ -130,8 +128,6 @@ document.getElementById('btnnn').addEventListener('click', function(e) {
   if (!hasErrors) {
     alert('Forma sėkmingai išsiųsta! Ačiū :)');
   }
-=======
->>>>>>> a6e93134474b9361e0d4bc6f1bb404af8a8cd20e
 });
 
 // GET IN TOUCH
@@ -281,17 +277,12 @@ if (bookBtn) {
   bookBtn.addEventListener('click', function (e) {
     e.preventDefault();
 
-<<<<<<< HEAD
-document.getElementById('btnnn').addEventListener('click', function (e) {
-  e.preventDefault();
-=======
     const name = document.getElementById('originalPatientName');
     const doctor = document.getElementById('originalDoctorName');
     const department = document.getElementById('originalDepartmentName');
     const phone = document.getElementById('originalPhone');
     const symptoms = document.getElementById('originalSymptoms');
     const date = document.getElementById('date');
->>>>>>> a6e93134474b9361e0d4bc6f1bb404af8a8cd20e
 
     const fields = [name, doctor, department, phone, symptoms, date];
     let hasEmpty = false;
@@ -538,7 +529,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-<<<<<<< HEAD
 
 document.getElementById('originalSymptoms').addEventListener('input', function () {
   const value = this.value;
@@ -567,10 +557,4 @@ document.getElementById('originalSymptoms').addEventListener('input', function (
 
   document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentSlide);
-  });
-
-
-// slide
-
-=======
->>>>>>> a6e93134474b9361e0d4bc6f1bb404af8a8cd20e
+})});
