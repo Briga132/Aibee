@@ -480,3 +480,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const menuPosition = menu.style.right;
+
+    if (menuPosition === '0px') {
+        menu.style.right = '-200px'; 
+    } else {
+        menu.style.right = '0';
+    }
+}
+

@@ -5,6 +5,37 @@ body {
     font-family: Noto Sans, sans-serif;
 }
 
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: #444;
+}
+
 header {
     width: 100%;
     height: 164px;
@@ -1362,11 +1393,2096 @@ h4 {
 
 
 /* media */
+/* Very small screens – up to 319px */
+@media (max-width: 319px) {
+}
 
-@media(min-width: 1200px) {}
+/* Small phones – 320px to 374px */
+@media (min-width: 320px) and (max-width: 374px) {
+}
 
-@media(min-width: 992px)and(max-width:1199px) {}
+/* Large phones – 375px to 599px */
+@media (min-width: 375px) and (max-width: 599px) {
+}
 
-@media(min-width:768px)and(max-width:991px) {}
+/* Phones and small tablets – 600px to 719px */
+@media (min-width: 600px) and (max-width: 719px) {
+}
 
-@media(max-width:767px) {}
+/* Tablets portrait – 720px to 767px */
+@media (min-width: 720px) and (max-width: 767px) {
+    /* header */
+     .navbar {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin-left: 8px;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    font-family: Noto Sans, sans-serif;
+}
+/* mico hospital main 1 */
+.tortik{
+    height: 650px;
+}
+.fulvolsvagen{
+    height: 650px;
+}
+.hachapuri{
+    width:390px ;
+    height: auto;
+    position: relative;
+    top: 150px;
+}
+.kosmos{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 220px;
+    margin-top: -46px;
+}
+.dota{
+    width: 500px;
+    height: auto;
+}
+/* book appointment main 2 */
+.sarai {
+    width: 160px;
+    height: 22px;
+    border: solid 1px #00c6a9;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.saraii {
+   width: 202px;
+    height: 44px;
+    border: solid 1px #00c6a9;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+    padding-right: 45px;
+}
+.dabltrack{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.kontratrack{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formochka{
+    height: 900px;
+}
+.main2{
+    height: 1050px;
+}
+.dastish{
+    text-align: center;
+}
+.sumka{
+    text-align: center;
+}
+.simka {
+    text-decoration: none;
+    border: solid 1px black;
+    padding: 15px 58px;
+    color: white;
+    background-color: #252525;
+    border-radius: 5px;
+}
+
+/* about hospital main 3*/
+.main3{
+    height: 900px;
+}
+.labuba{
+    width:300px ;
+}
+.labuba2{
+    width:300px ;
+}
+.invalidas{
+    top: 150px;
+    position: relative;
+    width: 400px;
+    height: auto;
+}
+
+.lb2{
+    height: 120px;
+}
+.lb3{
+    height: 120px;
+}
+
+/* hospital treatment main 4 */
+.main4 {
+    width: 100%;
+    height: 900px;
+}
+.krest{
+    display: none;
+}
+.silizionka{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.kletka1{
+    height: 300px;
+}
+.kletka2{
+    height: 300px;
+}
+.kletka3{
+     height: 300px;
+}
+.kletka4{
+    height: 300px;
+}
+.syro4ekl {
+    right: -51px;
+    height: 190px;
+    top:130px ;
+}
+.syro4ekr {
+    right: -51px;
+    height: 190px;
+    top:130px ;
+}
+/* our doctors main 5 */
+
+/* testimonial main 6 */
+.baklazhan{
+    height: 270px;
+}
+.syro4ekl {
+    right: -51px;
+    height: 249px;
+    top: 161px;
+}
+.syro4ekr {
+    right: -51px;
+    height: 249px;
+    top: 161px;
+}
+.main6{
+    height: 700px;
+}
+.bad{
+    width: 43%;
+}
+.day{
+    width: 43%;
+}
+.apelsin{
+    width: 150px;
+}.apelsin2{
+    width: 150px;
+}.apelsin3{
+    width: 150px;
+}.apelsin4{
+    width: 150px;
+}
+
+/* get in touch  main 7*/
+    .batmobil{
+        width: 270px;
+        height: auto;
+    }
+    .main7{
+        height: 650px;
+    }
+/* footer */
+.pirog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.end{
+    height: 900px;
+}
+.uliki{
+    text-align: center;
+}
+}
+
+/* Tablets landscape – 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+/* header */
+     .navbar {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin-left: 8px;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    font-family: Noto Sans, sans-serif;
+}
+/* mico hospital main 1 */
+.tortik{
+    height: 650px;
+}
+.fulvolsvagen{
+    height: 650px;
+}
+.hachapuri{
+    width:390px ;
+    height: auto;
+    position: relative;
+    top: 150px;
+}
+.kosmos{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 220px;
+    margin-top: -46px;
+}
+.dota{
+    width: 500px;
+    height: auto;
+}
+/* book appointment main 2 */
+.sarai {
+    width: 160px;
+    height: 22px;
+    border: solid 1px #00c6a9;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.saraii {
+   width: 202px;
+    height: 44px;
+    border: solid 1px #00c6a9;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+    padding-right: 45px;
+}
+.dabltrack{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.kontratrack{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formochka{
+    height: 900px;
+}
+.main2{
+    height: 1050px;
+}
+.dastish{
+    text-align: center;
+}
+.sumka{
+    text-align: center;
+}
+.simka {
+    text-decoration: none;
+    border: solid 1px black;
+    padding: 15px 58px;
+    color: white;
+    background-color: #252525;
+    border-radius: 5px;
+}
+
+/* about hospital main 3*/
+.main3{
+    height: 900px;
+}
+.labuba{
+    width:300px ;
+}
+.labuba2{
+    width:300px ;
+}
+.invalidas{
+    top: 150px;
+    position: relative;
+    width: 400px;
+    height: auto;
+}
+
+.lb2{
+    height: 120px;
+}
+.lb3{
+    height: 120px;
+}
+
+/* hospital treatment main 4 */
+.main4 {
+    width: 100%;
+    height: 900px;
+}
+.krest{
+    display: none;
+}
+.silizionka{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.kletka1{
+    height: 300px;
+}
+.kletka2{
+    height: 300px;
+}
+.kletka3{
+     height: 300px;
+}
+.kletka4{
+    height: 300px;
+}
+.syro4ekl {
+    right: -51px;
+    height: 190px;
+    top:130px ;
+}
+.syro4ekr {
+    right: -51px;
+    height: 190px;
+    top:130px ;
+}
+/* our doctors main 5 */
+
+/* testimonial main 6 */
+.baklazhan{
+    height: 270px;
+}
+.syro4ekl {
+    right: -51px;
+    height: 249px;
+    top: 161px;
+}
+.syro4ekr {
+    right: -51px;
+    height: 249px;
+    top: 161px;
+}
+.main6{
+    height: 700px;
+}
+.bad{
+    width: 43%;
+}
+.day{
+    width: 43%;
+}
+.apelsin{
+    width: 150px;
+}.apelsin2{
+    width: 150px;
+}.apelsin3{
+    width: 150px;
+}.apelsin4{
+    width: 150px;
+}
+
+/* get in touch  main 7*/
+    .batmobil{
+        width: 270px;
+        height: auto;
+    }
+    .main7{
+        height: 650px;
+    }
+/* footer */
+.pirog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.end{
+    height: 900px;
+}
+.uliki{
+    text-align: center;
+}
+
+}
+
+/* Laptops and smaller desktops – 1024px to 1199px */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    /* header */
+     .navbar {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    margin-left: 8px;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    font-family: Noto Sans, sans-serif;
+}
+/* mico hospital main 1 */
+.tortik{
+    height: 650px;
+}
+.fulvolsvagen{
+    height: 650px;
+}
+.kosmos{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 220px;
+    margin-top: -46px;
+}
+
+/* book appointment main 2 */
+.sarai {
+    width: 160px;
+    height: 22px;
+    border: solid 1px #00c6a9;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.saraii {
+   width: 202px;
+    height: 44px;
+    border: solid 1px #00c6a9;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+    padding-right: 45px;
+}
+/* about hospital main 3*/
+.main3{
+    height: 900px;
+}
+.labuba{
+    width:300px ;
+}
+.labuba2{
+    width:300px ;
+}
+.invalidas{
+    top: 150px;
+    position: relative;
+}
+/* hospital treatment main 4 */
+.main4 {
+    width: 100%;
+    height: 900px;
+}
+.silizionka{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.kletka1{
+    height: 300px;
+}
+.kletka2{
+    height: 300px;
+}
+.kletka3{
+     height: 300px;
+}
+.kletka4{
+    height: 300px;
+}
+.syro4ekl {
+    right: -51px;
+    height: 190px;
+    top:130px ;
+}
+.syro4ekr {
+    right: -51px;
+    height: 190px;
+    top:130px ;
+}
+/* our doctors main 5 */
+ 
+/* testimonial main 6 */
+.baklazhan{
+    height: 210px;
+}
+.bad{
+    width: 47%;
+}
+.day{
+    width: 47%;
+}
+.apelsin{
+    width: 150px;
+}.apelsin2{
+    width: 150px;
+}.apelsin3{
+    width: 150px;
+}.apelsin4{
+    width: 150px;
+}
+
+/* get in touch  main 7*/
+    .batmobil{
+        width: 330px;
+        height: auto;
+    }
+/* footer */
+
+}
+/* Standard desktop screens – 1200px to 1599px */
+@media (min-width: 1200px) and (max-width: 1599px) {
+    /* header */
+    .navbar {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    font-family: Noto Sans, sans-serif;
+}
+/* mico hospital main 1 */
+.tortik{
+    height: 600px;
+}
+.fulvolsvagen{
+    height: 605px;
+}
+.kosmos{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 410px;
+    margin-top: 0px;
+}
+/* book appointment main 2 */
+.sarai {
+    width: 184px;
+    height: 22px;
+    border: solid 1px #00c6a9;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.saraii {
+    width: 226px;
+    height: 44px;
+    border: solid 1px #00c6a9;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+    padding-right: 45px;
+}
+/* about hospital main 3*/
+
+.main4 {
+    width: 100%;
+    height: 900px;
+}
+.silizionka{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+.kletka1{
+    height: 300px;
+}
+.kletka2{
+    height: 300px;
+}
+.kletka3{
+     height: 300px;
+}
+.kletka4{
+    height: 300px;
+}
+
+/* our docors main 5 */
+.syro4ekl {
+    right: -51px;
+    height: 190px;
+    top:130px ;
+}
+.syro4ekr {
+    right: -51px;
+    height: 190px;
+    top:130px ;
+}
+/* testimonial main 6 */
+.baklazhan{
+    height: 200px;
+}
+/* get in touch main 7 */
+.bad{
+    width: 47%;
+}
+.day{
+    width: 47%;
+}
+.apelsin{
+    width: 150px;
+}.apelsin2{
+    width: 150px;
+}.apelsin3{
+    width: 150px;
+}.apelsin4{
+    width: 150px;
+}
+}
+
+/* Very large desktop screens – 1600px to 3839px */
+@media (min-width: 1600px) and (max-width: 3839px) {
+    /* header */
+    body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Noto Sans, sans-serif;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: #444;
+}
+
+header {
+    width: 100%;
+    height: 164px;
+}
+
+.header-top {
+    background-color: white;
+    padding: 15px;
+    height: 24px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+.fulll {
+    width: 70%;
+    margin: auto;
+}
+
+.color {
+    color: #00c6a9;
+}
+
+.info {
+    text-decoration: none;
+    color: black;
+    font-family: Noto Sans, sans-serif;
+
+}
+
+.header-bottom {
+    display: flex;
+    height: 110px;
+    background-color: #00c6a9;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.imglogo {
+    width: 70px;
+    height: 110px;
+    background-color: white;
+    margin-left: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.hagiwagi {
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    font-family: Noto Sans, sans-serif;
+}
+
+.link:hover {
+    color: black;
+}
+
+
+.pechenka {
+    display: flex;
+    font-family: Noto Sans, sans-serif;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.pechenka a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.pechenka a:hover {
+    color: black;
+}
+
+.polpichenki {
+    display: flex;
+    align-items: center;
+}
+
+.polpichenki .btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    padding: 30px;
+    transition: color 0.3s ease;
+}
+
+.polpichenki .btn:hover {
+    color: black;
+}
+/* login/sign-up */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-overlay.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 400px; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  position: relative;
+
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #00c6a9;
+}
+
+.modal-header {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00c6a9;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.toggle-buttons button {
+  background-color: #eee;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.toggle-buttons button:hover {
+  background-color: #00c6a9;
+  color: white;
+}
+
+.toggle-buttons button.active {
+  background-color: #00c6a9;
+  color: white;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px; right: 15px;
+  font-size: 28px;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #00c6a9;
+}
+
+.modal-header {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00c6a9;
+  text-align: center;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.toggle-buttons button {
+  background-color: #eee;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.toggle-buttons button:hover {
+  background-color: #00c6a9;
+  color: white;
+}
+
+.toggle-buttons button.active {
+  background-color: #00c6a9;
+  color: white;
+}
+
+form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #00c6a9;
+}
+
+.submit-btn {
+  background-color: #00c6a9;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #00c6a9;
+}
+.message {
+  font-size: 14px;
+}
+
+/* footer */
+
+.end {
+    height: 540px;
+    background-color: #252525;
+    width: 100%;
+}
+
+.malekuly {
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
+.obshirnoe {
+    margin: auto;
+    display: flex;
+}
+
+.white {
+    width: 60px;
+    height: 120px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.kisimisi {
+    margin-top: 12px;
+    height: 85px;
+    width: 60px;
+}
+
+.atom {
+    border: none;
+    border-bottom: solid 1px #ffffff;
+    margin-bottom: 90px;
+    width: 100%;
+    margin-left: 40px;
+    font-family: Noto Sans, sans-serif;
+    position: relative;
+    top: 50px;
+}
+
+.minatom {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    display: flex;
+}
+
+.knopka {
+    border: none;
+    background: none;
+    color: #00c6a9;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+.mandarin {
+    background: none;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    color: white;
+}
+
+h5 {
+    font-size: 20px;
+    color: white;
+    font-family: Noto Sans, sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    right: -20px;
+    top: 30px;
+
+}
+
+.pirog {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
+}
+
+.sosiski2 {
+    font-family: Noto Sans, sans-serif;
+    top: 30px;
+    position: relative;
+}
+
+.sosi_nika {
+    width: 15px;
+}
+
+.sosiski {
+    color: white;
+    display: flex;
+    padding-bottom: 10px;
+    text-decoration: none;
+    gap: 15px;
+}
+
+h5::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #00c6a9;
+    transform: translateY(-50%);
+    left: -20px;
+}
+
+.ikonki {
+    color: #00c6a9;
+    font-size: 24px;
+    padding-right: 5px;
+    text-decoration: none;
+
+}
+
+.ikonki2 {
+    top: 30px;
+    position: relative;
+    top: 45px;
+}
+
+.suliki {
+    text-decoration: none;
+    color: white;
+    font-family: Noto Sans, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.suliki:hover {
+    color: #00c6a9;
+}
+
+.burgeriukas {
+    list-style: none;
+    padding-bottom: 10px;
+
+}
+
+.burger-king {
+    padding-left: 0;
+    position: relative;
+    top: 30px;
+}
+
+.golubcy2 {
+    color: #00c6a9;
+}
+
+.aguzok {
+    width: 70px;
+    height: 70px;
+
+}
+
+.burunduki {
+    display: flex;
+    padding-top: 30px;
+}
+
+.chip {
+    display: flex;
+    padding-top: 10px;
+}
+
+.speshite {
+    display: flex;
+    padding-top: 30px;
+}
+
+.ty {
+    display: flex;
+    padding-top: 10px;
+}
+
+.scrip {
+    color: white;
+    font-family: Noto Sans, sans-serif;
+    padding-left: 10px;
+}
+
+.otshelnik {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Noto Sans, sans-serif;
+    padding-top: 30px;
+}
+
+.okak {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Noto Sans, sans-serif;
+}
+
+/* main */
+/* section 1 Mico Hospital */
+.fullHD {
+    width: 100%;
+    height: 630px;
+    box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.2);
+}
+ 
+.pursik{
+    color: white;
+}
+.vosvagen {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(20px);
+  position: absolute;
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+ 
+.vosvagen.active {
+  opacity: 1;
+  transform: translateY(0);
+  display: flex;
+  width: 70%;
+  margin: auto;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+ 
+}
+ 
+ 
+.fulvolsvagen {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+ 
+.trakingvolt {
+  display: flex;
+  transition: transform 0.6s ease;
+  width: 70%;
+  margin: auto;
+}
+ 
+.vosvagen {
+  flex: 0 0 100%;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+ 
+ 
+.papochka-blinchikov {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+ 
+.mochi {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    background-color: #00c6a9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 90px;
+    position: relative;
+    animation: aura 2s infinite ease-in-out;
+}
+ 
+.my-icon {
+    transform: scale(1.3);
+}
+ 
+@keyframes aura {
+    0% {
+        box-shadow: 0 0 0px 0 rgba(0, 198, 169, 0.7);
+    }
+ 
+    50% {
+        box-shadow: 0 0 0px 15px rgba(0, 198, 169, 0);
+    }
+ 
+    100% {
+        box-shadow: 0 0 0px 0 rgba(0, 198, 169, 0);
+    }
+}
+ 
+ 
+.zelionka {
+    font-family: Noto Sans, sans-serif;
+    margin-top: 50px;
+    font-size: 47px;
+    line-height: 1;
+}
+ 
+.cvetochki{
+    color: white;
+}
+.dell {
+    color: #00c6a9;
+}
+ 
+.paliruj {
+    font-family: Noto Sans, sans-serif;
+    width: 80%;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.609);
+}
+ 
+.topchik {
+    text-decoration: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 12px 45px;
+    color: white;
+    background-color: rgb(59, 56, 56);
+    font-family: Noto Sans, sans-serif;
+    transition: color 0.3s ease;
+}
+ 
+.topchik:hover {
+    background-color: black;
+}
+ 
+ 
+.bortiki {
+    margin-top: 50px;
+ 
+}
+ 
+.wsio-ili-nechewo {
+    z-index: 2;
+}
+ 
+.hachapuri {
+    width: 580px;
+    height: 150;
+}
+ 
+.venera {
+ 
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+}
+ 
+.mars {
+ 
+    width: 25px;
+    height: 25px;
+    margin-right: 35px;
+    z-index: 2;
+}
+ 
+.jupiter {
+    background-color: #00c6a9;
+    width: 10px;
+    height: 15px;
+    padding: 17px 20px;
+    transition: color 0.3s ease;
+ 
+}
+ 
+.jupiter:hover {
+    background-color: black;
+ 
+}
+ 
+.kosmos {
+    display: flex;
+    margin-top: 70px;
+    justify-content: flex-end;
+    margin-right: 410px;
+}
+ 
+/* img */
+.dots {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -360px;
+    z-index: 1;
+    pointer-events: none;
+}
+ 
+.dota {
+    width: 600px;
+}
+ 
+#arrowL {
+    border: none;
+    background-color: unset;
+}
+ 
+#arrowR {
+    border: none;
+    background-color: unset;
+}
+ 
+ 
+
+/* section 2 book apointment */
+.main2 {
+    height: 560px;
+    width: 100%;
+}
+
+.error-border {
+  border: 1px solid red !important;
+}
+
+
+.formochka {
+    height: 380px;
+    border: 1px black;
+    box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.2);
+    margin-top: 90px;
+    padding: 50px;
+
+}
+
+.mini {
+    width: 70%;
+    margin: auto;
+}
+
+h4 {
+    margin-top: -10px;
+    font-size: 24px;
+}
+
+.liniuote {
+    border-bottom: solid 3px #00c6a9;
+    width: 103px;
+    padding-top: 5px;
+}
+
+.px1 {
+    margin-left: -1.8px;
+}
+
+.cvetnoe {
+    color: #00c6a9;
+}
+
+.dabltrack {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.kontratrack {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 0px;
+    justify-content: center;
+
+}
+
+.sarai {
+    width: 315px;
+    height: 22px;
+    border: solid 1px #00c6a9;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+
+
+}
+
+.saraii {
+    width: 357px;
+    height: 44px;
+    border: solid 1px #00c6a9;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+
+    background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='%23808080' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><polyline points='6 9 12 15 18 9'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+
+    padding-right: 45px;
+}
+
+.sarai::placeholder {
+    color: #00c6a9;
+}
+
+input[type="date"] {
+    color: #00c6a9;
+}
+
+.cheburek {
+    margin-bottom: 20px;
+}
+
+
+.saraii:optional {
+    color: #525252;
+}
+
+
+.simka {
+    text-decoration: none;
+    border: solid 1px black;
+    padding: 15px 50px;
+    color: white;
+    background-color: #252525;
+    border-radius: 5px;
+}
+
+.simka:hover {
+    background-color: black;
+}
+
+.sumka {
+    margin-top: 45px;
+}
+
+/* about hospital */
+.main3 {
+    width: 100%;
+    height: 590px;
+}
+
+.pupsikas {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    gap: 60px;
+    justify-content: center;
+}
+
+.kaktus {
+    color: #00c6a9;
+
+}
+
+h4 {
+    font-size: 30px;
+
+}
+
+.labuba {
+    width: 550px;
+    line-height: 1.5;
+    margin-top: -15px;
+    color: rgba(0, 0, 0, 0.449);
+}
+
+.labuba2 {
+    display: none;
+    width: 550px;
+    line-height: 1.5;
+    margin-top: -15px;
+    color: rgba(0, 0, 0, 0.449);
+
+}
+
+.hide {
+    display: none;
+}
+
+.animacija {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+
+.animacija.show {
+    max-height: 500px;
+    opacity: 3;
+}
+
+.show {
+    display: block;
+}
+
+.shnobel {
+    margin-top: 45px;
+}
+
+.bobel {
+    text-decoration: none;
+    color: white;
+    background-color: #252525;
+    border: #252525;
+    padding: 14px 45px;
+    border-radius: 5px;
+}
+
+.bobel:hover {
+    background-color: black;
+}
+
+.mielas {
+    margin-top: 110px;
+
+}
+
+/* section 4 hospital treatment */
+.main4 {
+    width: 100%;
+    height: 430px;
+}
+
+.krovat {
+    width: 70%;
+    margin: auto;
+}
+
+.silizionka {
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+
+}
+
+.help {
+    width: 260px;
+    line-height: 1.4;
+    margin-top: -16px;
+}
+
+.help2 {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    margin-top: 0;
+    margin-top: -17px;
+}
+
+
+.help2.show {
+    width: 60%;
+    max-height: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.serdce {
+    text-align: center;
+}
+
+.liogkije {
+    color: #00c6a9;
+}
+
+.gore {
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: #00c6a9;
+    margin-left: -6px;
+}
+
+.gore:hover {
+    color: black;
+}
+
+.onre {
+    padding-bottom: 20px;
+}
+
+.banshi {
+    font-size: 24px;
+}
+
+.blagavonja {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -320px;
+    pointer-events: none;
+}
+
+
+
+/* our doctors */
+.main5 {
+    width: 100%;
+    height: 700px;
+    background-color: #00c6a9;
+}
+
+.cm {
+    color: black;
+}
+
+.wraithking {
+    text-align: center;
+    color: white;
+
+}
+
+.azuki {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1144px; 
+  margin: auto;
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+  scrollbar-width: none; 
+}
+
+.azuki::-webkit-scrollbar {
+  display: none; 
+}
+
+.slider-window {
+    width: calc(327px * 3 + 15px * 2); 
+    overflow: hidden;
+    position: relative;
+    padding-top: 60px; 
+    margin: auto;
+    height: 380px; 
+}
+
+.darkwillow {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.io1, .io2, .io3 {
+    flex: 0 0 auto; 
+}
+
+
+.io1 {
+    background-color: rgb(255, 255, 255);
+    width: 327px;
+    height: auto;
+}
+
+.pops {
+    padding: 11px;
+    margin-top: -55px;
+    width: 305px;
+    height: 270px;
+}
+
+.io2 {
+    background-color: white;
+    width: 327px;
+    height: auto;
+}
+
+.io3 {
+    background-color: white;
+    width: 327px;
+    height: auto;
+}
+
+.dyrka {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.morkovka {
+    color: #00c6a9;
+
+}
+
+.superstar {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.troksa {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.haribo {
+    width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    gap: 10px;
+    text-decoration: none;
+    padding-right: 15px;
+    margin-left: 10px;
+    transition: color 0.2s ease;
+}
+.haribo:hover{
+    color:#00c6a9 ;
+}
+
+.axer {
+    height: 50px;
+    background-color: white;
+    padding: 17px 28px;
+    position: relative;
+    top: 220px;
+    transition: color 0.3s ease;
+
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%2300c6a9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(-90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+    border: none;
+}
+
+.axel {
+    height: 50px;
+    background-color: white;
+    padding: 17px 28px;
+    position: relative;
+    top: 220px;
+    transition: color 0.3s ease;
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%2300c6a9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+    border: none;
+}
+
+
+.axer:hover {
+    background-color: #252525;
+
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(-90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+}
+
+.axel:hover {
+    background-color: #252525;
+
+    background-image: url("data:image/svg+xml;utf8,\<svg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>\<g transform='rotate(90 12 12)'>\<polyline points='6 9 12 15 18 9'/>\</g></svg>");
+
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+}
+
+.bloodseeker {
+    padding-top: 110px;
+}
+
+/* testimonial */
+
+.skrytnost {
+    display: none;
+}
+
+.main6 {
+    width: 100%;
+    height: 500px;
+}
+
+.arbuzik {
+    margin: auto;
+    width: 70%;
+}
+
+.pomidori {
+    padding-top: 100px;
+}
+
+.ogurchikiiii {
+    color: #00c6a9;
+}
+
+.baklazhan {
+    border: 1px black;
+    box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.mandarinka4 {
+    display: flex;
+    justify-content: flex-end;
+    height: 0px;
+}
+
+.klubnika {
+    margin-top: -20px;
+    font-size: 25px;
+    color: #00c6a9;
+}
+
+.malina {
+    color: #00c6a9;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.chereshnya {
+    color: rgba(0, 0, 0, 0.250);
+    margin-top: 1px;
+}
+
+.vishnya {
+    line-height: 1.7;
+}
+
+.flexxx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
+.syro4ekl, .syro4ekr {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #00c6a9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.syro4ekl {
+    right: -51px;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><polyline points='9 6 15 12 9 18'/></svg>");
+    height: 165px;
+}
+
+.syro4ekr {
+    left: -51px;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><polyline points='15 6 9 12 15 18'/></svg>");
+    height: 165px;
+}
+
+
+.pipiski {
+    display: flex;
+}
+
+.burlyki {
+    display: flex;
+
+}
+
+/* get in touch */
+
+.main7{
+    height: 790px;
+}
+
+.main7 {
+    height: 790px;
+    width: 100%;
+}
+ .error {
+      border: 2px solid red !important;
+    }
+    .error-message {
+      color: red;
+      font-size: 12px;
+      margin-top: 4px;
+      font-family: sans-serif;
+    }
+.dobranoc {
+    width: 70%;
+    margin: auto;
+}
+
+
+.bad {
+    width: 60%;
+    border: #00c6a9 1px solid;
+    padding: 15px;
+
+}
+
+.bad::placeholder {
+    color: #00c6a9;
+}
+
+.day {
+    width: 60%;
+    height: 70px;
+    border: 1px solid #00c6a9;
+    padding: 15px;
+    resize: none;
+    text-align: left;
+    vertical-align: top;
+    font-family: Noto Sans, sans-serif;
+    font-size: 14px;
+    padding-top: 55px;
+    padding-left: 15px;
+    transition: 0.1s ease;
+}
+
+.day::placeholder {
+    color: #00c6a9;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.day:focus {
+    height: 110px;
+    padding-top: 15px;
+}
+
+.day:focus::placeholder {
+    opacity: 0;
+}
+
+.kevin {
+    margin-top: -380px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.good_night {
+    padding-bottom: 25px;
+}
+
+.winks {
+    text-decoration: none;
+    border: solid 1px #00c6a9;
+    color: white;
+    padding: 18px 58px;
+    background-color: #00c6a9;
+    font-weight: bold;
+}
+
+.feji {
+    margin-top: 18px;
+}
+}
+
+/* Full HD game consoles and screens – 1920px to 3839px */
+@media (min-width: 1920px) and (max-width: 3839px) {
+}
+
+/* TV 4K Ultra HD and above – from 3840px */
+@media (min-width: 3840px) {
+}
