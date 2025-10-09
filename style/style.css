@@ -963,7 +963,18 @@ h4 {
     display: grid;
 
 }
-
+.kletka1{
+    height: 300px;
+}
+.kletka2{
+    height: 300px;
+}
+.kletka3{
+     height: 300px;
+}
+.kletka4{
+    height: 300px;
+}
 .help {
     width: 260px;
     line-height: 1.4;
@@ -3317,6 +3328,7 @@ h4 {
     border: 1px black;
     box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.2);
     padding: 30px;
+    height: 165px;
 }
 
 .mandarinka4 {
@@ -3371,12 +3383,14 @@ h4 {
     right: -51px;
     background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><polyline points='9 6 15 12 9 18'/></svg>");
     height: 165px;
+    top: 110px;
 }
 
 .syro4ekr {
     left: -51px;
     background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><polyline points='15 6 9 12 15 18'/></svg>");
     height: 165px;
+    top: 110px;
 }
 
 
