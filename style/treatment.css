@@ -5,3 +5,19 @@
 .krovat{
     margin-top: 280px;
 }
+@media(min-width: 600px) and (max-width: 1600px){
+    .main4{
+    height: 990px;
+}
+    .silizionka{
+        gap: 0px;
+    }.kletka1{
+        height: 400px;
+    } .kletka2{
+        height: 400px;
+    } .kletka3{
+        height: 400px;
+    } .kletka4{
+        height: 400px;
+    }
+}

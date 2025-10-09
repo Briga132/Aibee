@@ -491,4 +491,26 @@ function toggleMenu() {
         menu.style.right = '0';
     }
 }
+// burger menu
+function toggleMenu() {
+    const sidebar = document.getElementById('sidebar');
+    const burger = document.querySelector('.burger');
+    sidebar.classList.toggle('active');
+    burger.classList.toggle('active');
+}
+let lastScrollTop = 0;
+const topBar = document.getElementById("topBar");
+
+window.addEventListener("scroll", function() {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        topBar.style.transform = "translateY(-100%)";
+    } else {
+        topBar.style.transform = "translateY(0)";
+    }
+
+    lastScrollTop = scrollTop;
+});
+// subscribe fotter
 

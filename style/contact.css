@@ -87,3 +87,35 @@ h4{
 .feji {
     margin-top: 18px;
 }
+@media(min-width: 600px) and (max-width: 1600px) {
+    .bad{
+        width: 400px;
+    }
+    .day{
+        width: 400px;
+    }
+}
+@media(min-width: 600px) and (max-width: 1150px) {
+    .bad{
+        width: 300px;
+    }
+    .day{
+        width: 300px;
+    }
+}
+@media(min-width: 600px) and (max-width: 900px) {
+    .bad{
+        width: 250px;
+    }
+    .day{
+        width: 250px;
+    }
+}
+@media(min-width: 600px) and (max-width: 750px) {
+    .bad{
+        width: 190px;
+    }
+    .day{
+        width: 190px;
+    }
+}
