@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/about.css">
-    <script src="script/about.js"></script>
+    <script src="script/about.js" ></script>
     <script src="script/script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
 </head>
@@ -93,7 +93,14 @@
                 </div>
             </div>
         </div> 
-                
+<div id="search-modal" class="search-modal hidden">
+  <div class="search-modal-content">
+    <button class="close-btn" id="close-search">&times;</button>
+    <input type="text" id="search-input" placeholder="search..." autocomplete="off" />
+    <ul id="search-results"></ul>
+  </div>
+</div>
+
     </header>
     <section class="main3">
         <!-- about hospital -->

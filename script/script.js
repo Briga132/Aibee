@@ -512,5 +512,75 @@ window.addEventListener("scroll", function() {
 
     lastScrollTop = scrollTop;
 });
-// subscribe fotter
+// fafa search
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const subscribeForm = document.getElementById('subscribeForm');
+        
+        subscribeForm.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const email = document.getElementById('mada').value;
+            if (email) {
+                alert('Thank you for subscribing!');
+
+                document.getElementById('mada').value = '';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+    });
+
+
+const searchBtn = document.querySelector('.btn'); 
+const searchModal = document.getElementById('search-modal');
+const closeBtn = document.getElementById('close-search');
+const searchInput = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
+
+const pages = [
+  { name: 'Home', url: 'index.html' },
+  { name: 'About', url: 'about.html' },
+  { name: 'Treatment', url: 'treatment.html' },
+  { name: 'Doctors', url: 'doctor.html' },
+  { name: 'Testimonial', url: 'testimonial.html' },
+  { name: 'Contact Us', url: 'contact.html' },
+];
+
+searchBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  searchModal.classList.remove('hidden');
+  searchInput.value = '';
+  searchResults.innerHTML = '';
+  searchInput.focus();
+});
+
+closeBtn.addEventListener('click', () => {
+  searchModal.classList.add('hidden');
+});
+
+searchModal.addEventListener('click', (e) => {
+  if (e.target === searchModal) {
+    searchModal.classList.add('hidden');
+  }
+});
+
+searchInput.addEventListener('input', () => {
+  const query = searchInput.value.toLowerCase();
+  searchResults.innerHTML = '';
+
+  if (query.length === 0) {
+    return;
+  }
+
+  const filtered = pages.filter(page => page.name.toLowerCase().includes(query));
+
+  filtered.forEach(page => {
+    const li = document.createElement('li');
+    li.textContent = page.name;
+    li.addEventListener('click', () => {
+      window.location.href = page.url;
+    });
+    searchResults.appendChild(li);
+  });
+});
