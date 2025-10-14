@@ -5,3 +5,80 @@
     margin-top: 180px;
 }
 
+@media(min-width: 320px) and (max-width: 599px){
+    .main6{
+    height: 900px;
+    margin-top: -180px;
+}
+    .knopka {
+        position: relative;
+        left: -143px;
+        top: -27px;
+    }
+        #fufa {
+        width: 50px;
+        font-size: 12px;
+        position: relative;
+        right: -10px;
+    }
+.ogurchikiiii {
+    margin-top: 130px;
+}
+.pomidori{
+   margin-top: -10;
+}
+.vishnya{
+    font-size: 11px;
+}
+.baklazhan{
+    height: 350px;
+}
+.malina{
+    font-size: 16px;
+}
+.chereshnya{
+    font-size: 8px;
+}
+.fa.fa-quote-left{
+    font-size: 15px;
+}
+    .syro4ekl {
+        right: -38px;
+        height: 135px;
+        top: 210px;
+        width: 38px;
+    }
+        .syro4ekr {
+        left: -38px;
+        height: 135px;
+        top: 210px;
+        width: 38px;
+    }
+}
+
+@media(min-width: 400px) and (max-width: 599px){
+    .malina{
+    font-size: 18px;
+}
+.vishnya{
+    font-size: 13px;
+}
+}
+
+@media(min-width: 500px) and (max-width: 599px){
+    .malina{
+    font-size: 19px;
+}
+.chereshnya{
+    font-size: 10px;
+}
+.vishnya{
+    font-size: 15px;
+}
+}
+
+@media(min-width: 600px) and (max-width: 780px){
+.ogurchikiiii {
+    margin-top: 130px;
+}
+}

@@ -43,7 +43,7 @@ body {
 .burger.active div:nth-child(3) {
     transform: rotate(-45deg);
     position: relative;
-    bottom: 25px;
+    bottom: 16px;
 }
 
 
@@ -159,7 +159,7 @@ header {
 
 .imglogo {
     width: 70px;
-    height: 110px;
+    height: 111px;
     background-color: white;
     margin-left: 20px;
     padding-left: 30px;
@@ -220,10 +220,11 @@ header {
 
 .polpichenki .btn:hover {
     color: black;
-}/* fafa search */
+}
 .hidden {
   display: none;
 }
+
 .search-modal {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -233,46 +234,66 @@ header {
   align-items: center;
   z-index: 9999;
 }
+
 .search-modal-content {
-  background: white;
+  background: white; 
   padding: 20px;
   width: 90%;
   max-width: 400px;
   border-radius: 8px;
   position: relative;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
 }
+
 #search-input {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   font-size: 16px;
   box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
 }
+
+#search-input:focus {
+  border-color: #888;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
 #search-results {
   margin-top: 10px;
   list-style: none;
   padding: 0;
   max-height: 200px;
   overflow-y: auto;
-  border: 1px solid #ccc;
+  border: 1px solid #00c6a9;
   border-radius: 4px;
+  background: white; 
 }
+
 #search-results li {
   padding: 8px;
   cursor: pointer;
+  transition: 0.2s;
 }
+
 #search-results li:hover {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; 
 }
+
 .close-btn {
   position: absolute;
-  top: 8px;
-  right: 12px;
+  top: 17px;
+  right: 19px;
   background: none;
   border: none;
   font-size: 24px;
   cursor: pointer;
 }
-/* login/sign-up */
+.close-btn:hover {
+  color: #00c6a9;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -298,16 +319,6 @@ header {
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   position: relative;
 
-}
-
-.close-btn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 24px;
-  color: #888;
-  cursor: pointer;
-  transition: color 0.3s ease;
 }
 
 .close-btn:hover {
@@ -373,9 +384,10 @@ header {
 
 .close-btn {
   position: absolute;
-  top: 15px; right: 15px;
+  top: 19px; 
+  right: 19px;
   font-size: 28px;
-  color: #888;
+  color: #00c6a9;
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -1121,6 +1133,9 @@ h4 {
     max-height: 70px;
     opacity: 1;
     visibility: visible;
+    line-height: 1.4;
+    position: relative;
+    top: 2px;
 }
 
 .serdce {
@@ -1531,38 +1546,51 @@ h4 {
 /* media */
 /* Very small screens – up to 319px */
 @media (max-width: 319px) {
+
 }
 
 /* Small phones – 320px to 374px */
 @media (min-width: 320px) and (max-width: 374px) {
-}
-
-/* Large phones – 375px to 599px */
-@media (min-width: 375px) and (max-width: 599px) {
-     /* header */
+    /* header */
      .fulll {
     width: 100%;
     margin: auto;
 }
-
-     .navbar {
+.pechenka{
+    position: relative;
+    right: -5px;
+    top: 1px;
+}
+#login-btn{
+    font-size: 10px;
+}
+#signup-btn{
+    font-size: 10px;
+}
+.btn{
+    width: 60px;
+}
+  .navbar {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
     display: none;
 }
+.header-bottom{
+    height: 60px;
+}
 .header-top {
     background-color: white;
     padding: 15px;
     height: 24px;
     display: flex;
-    width: 100%;
+    width: 90%;
     margin: auto;
-
+    padding-bottom: 2px;
 }
 .info{
-    font-size: 9px;
+    font-size: 10px;
 }
 .link {
     text-decoration: none;
@@ -1572,7 +1600,77 @@ h4 {
     font-size: 16px;
     font-family: Noto Sans, sans-serif;
 }
+.hagiwagi{
+    width:30px ;
+    height:auto ;
+    top: 3px;
+    position: relative;
+    left: -14px;
+}
+.imglogo{
+    width: 10px;
+    height:62px ;
+}
+#fufa{
+    width: 50px;
+    font-size: 12px;
+    position: relative;
+    right: -10px;
+}
+.full{
+    position: relative;
+    bottom: 11px;
+}
+.burger{
+    width: 30px;
+    height: 18px;
+    left: 10px;
+}
+.burger div{
+    height: 7
+    2px;
+    width: 22px;
+}
+
 /* mico hospital main 1 */
+.fullHD{
+    position: relative;
+    top: -61px;
+    height: 850px;
+}
+.fulvolsvagen{
+    height: 819px;
+}
+.vosvagen .slide2{
+    flex-direction: column;
+    display: flex;
+    
+}
+.vosvagen .slide{
+    flex-direction: column;
+    display: flex;
+    
+}
+
+.vosvagen{
+display: none;
+}
+.vosvagen.active{
+    display: flex;
+}
+.dots{
+    position: relative;
+    top: -370px;
+}
+.pravyj-blinchik{
+    position: relative;
+    
+}
+
+.bortiki{
+    position: relative;
+    top:270px;
+}
 .tortik{
     height: 650px;
 }
@@ -1582,21 +1680,428 @@ h4 {
 .zelionka{
     font-size: 35px;
 }
-.fulvolsvagen{
-    height: 650px;
-}
+
 .hachapuri{
-    width:320px ;
+    width:270px ;
     height: auto;
     position: relative;
-    top: 280px;
-    
+    top: 470px;
+    left: -230px;
 }
 .kosmos{
     display: flex;
     justify-content: flex-end;
-    margin-right: 220px;
-    margin-top: -46px;
+    margin-right: 140px;
+    margin-top: 4px;
+}
+.dota{
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 80px;
+}
+/* book appointment main 2 */
+.sarai {
+    width: 137px;
+    height: 22px;
+    border: solid 1px #00c6a9;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.px1{
+    margin-left: 0px;
+}
+h4{
+        font-size: 20px;
+}
+.saraii {
+   width: 176px;
+    height: 44px;
+    border: solid 1px #00c6a9;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 24px 24px;
+    padding-right: 45px;
+}
+.dabltrack{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.kontratrack{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formochka{
+    height: 900px;
+    padding: 25px;
+}
+.main2{
+    height: 1050px;
+}
+.dastish{
+    text-align: center;
+}
+.sumka{
+    text-align: center;
+}
+.simka {
+    text-decoration: none;
+    border: solid 1px black;
+    padding: 15px 58px;
+    color: white;
+    background-color: #252525;
+    border-radius: 5px;
+}
+
+/* about hospital main 3*/
+.main3{
+    height: 1000px;
+}
+.labuba{
+    width:270px ;
+    font-size: 14px;
+}
+.labuba2{
+    width:300px ;
+}
+.invalidas{
+    top: 110px;
+    position: relative;
+    width: 270px;
+    height: auto;
+}
+.pupsikas{
+    gap:0 ;
+    display: flex;
+    flex-direction: column;
+}
+.lb2{
+    height: 120px;
+}
+.lb3{
+    height: 120px;
+}
+.h44{
+    position: relative;
+    top: -300px;
+}
+
+/* hospital treatment main 4 */
+.main4 {
+    width: 100%;
+    height: 1400px;
+}
+.krest{
+    display: none;
+}
+.krovat{
+    width: 72%;
+}
+.silizionka{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.kletka1{
+    height: 320px;
+}
+.kletka2{
+    height: 320px;
+}
+.kletka3{
+     height: 320px;
+}
+.kletka4{
+    height: 320px;
+}
+.help2.show{
+    width: 260px;
+    max-height: 90px;
+}
+/* our doctors main 5 */
+
+/* testimonial main 6 */
+
+.baklazhan{
+    height: 660px;
+}
+.syro4ekl {
+    right: -48px;
+    height: 249px;
+    top: 300px;
+    width: 47px;
+}
+.syro4ekr {
+    right: -48px;
+    height: 249px;
+    top: 300px;
+    width: 50.px;
+}
+.main6{
+    height: 1000px;
+}
+.bad{
+    width: 43%;
+}
+.day{
+    width: 43%;
+}
+.apelsin{
+    width: 150px;
+}.apelsin2{
+    width: 150px;
+}.apelsin3{
+    width: 150px;
+}.apelsin4{
+    width: 150px;
+}
+
+/* get in touch  main 7*/
+.kevin{
+    position: relative;
+        
+}
+    .batmobil{
+        width: 240px;
+        height: auto; 
+    }
+    .batmen{
+        position: absolute;
+        top: -350px;
+        left: -30px;
+    }
+    
+    .main7{
+        height: 950px;
+    }
+    .snow{
+        padding-bottom: 272px;
+    }
+    .day{
+        width: 130px;
+    }
+    .bad{
+         width: 130px;
+    }
+    .dobranoc{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+/* footer */
+.pirog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.uliki{
+    text-align: center;
+}
+.kisimisi{
+    width: 39px;
+    height: auto;
+    position: relative;
+    left: -5px;
+}
+.white{
+    width:30px ;
+    height:80px ;
+}
+.mandarin{
+    position: relative;
+    top: -40px;
+    left: -35px;
+    font-size: 16px;
+    width: 92px;
+}
+.knopka{
+    position: relative;
+    left: -143px;
+    top: -20px;
+
+}
+
+.end{
+    height: 1470px;
+}
+.atom {
+    margin-bottom: 90px;
+    width: 55%;
+    margin-left: 60px;
+    font-family: Noto Sans, sans-serif;
+    position: relative;
+    top:-20px;
+}
+.pirog{
+    gap: 1px;
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+}
+.minatom {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    top: 70px;
+    position: relative;
+    width: 50px;
+}
+}
+
+
+/* Large phones – 375px to 599px */
+@media (min-width: 375px) and (max-width: 599px) {
+     /* header */
+     .fulll {
+    width: 100%;
+    margin: auto;
+}
+.pechenka{
+    position: relative;
+    right: 35px;
+    top: 1px;
+}
+#login-btn{
+    font-size: 10px;
+}
+#signup-btn{
+    font-size: 10px;
+}
+.btn{
+    width: 60px;
+}
+  .navbar {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+.header-bottom{
+    height: 60px;
+}
+.header-top {
+    background-color: white;
+    padding: 15px;
+    height: 24px;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2px;
+}
+.info{
+    font-size: 10px;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    margin-left: 8px;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    font-family: Noto Sans, sans-serif;
+}
+.hagiwagi{
+    width:30px ;
+    height:auto ;
+    top: 3px;
+    position: relative;
+    left: -14px;
+}
+.imglogo{
+    width: 10px;
+    height:62px ;
+}
+#fufa{
+    width: 50px;
+    font-size: 12px;
+    position: relative;
+    right: -10px;
+}
+.full{
+    position: relative;
+    bottom: 11px;
+}
+.burger{
+    width: 30px;
+    height: 18px;
+    left: 10px;
+}
+.burger div{
+    height: 72px;
+    width: 22px;
+}
+/* mico hospital main 1 */
+.fullHD{
+    position: relative;
+    top: -61px;
+    height: 850px;
+}
+.fulvolsvagen{
+    height: 819px;
+}
+.vosvagen .slide2{
+    flex-direction: column;
+    display: flex;
+    
+}
+.vosvagen .slide{
+    flex-direction: column;
+    display: flex;
+    
+}
+
+.vosvagen{
+display: none;
+}
+.vosvagen.active{
+    display: flex;
+}
+.dots{
+    position: relative;
+    top: -370px;
+}
+.pravyj-blinchik{
+    position: relative;
+    
+}
+
+.bortiki{
+    position: relative;
+    top:270px;
+}
+.tortik{
+    height: 650px;
+}
+.paliruj{
+    font-size: 14px;
+}
+.zelionka{
+    font-size: 35px;
+}
+
+.hachapuri{
+    width:270px ;
+    height: auto;
+    position: relative;
+    top: 470px;
+    left: -230px;
+}
+.kosmos{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 140px;
+    margin-top: 4px;
 }
 .dota{
     width: 400px;
@@ -1643,6 +2148,7 @@ h4 {
 
 .formochka{
     height: 900px;
+    padding: 25px;
 }
 .main2{
     height: 1050px;
@@ -1664,7 +2170,7 @@ h4 {
 
 /* about hospital main 3*/
 .main3{
-    height: 750px;
+    height: 1000px;
 }
 .labuba{
     width:300px ;
@@ -1681,6 +2187,8 @@ h4 {
 }
 .pupsikas{
     gap:0 ;
+    display: flex;
+    flex-direction: column;
 }
 .lb2{
     height: 120px;
@@ -1688,21 +2196,25 @@ h4 {
 .lb3{
     height: 120px;
 }
+.h44{
+    position: relative;
+    top: -300px;
+}
 
 /* hospital treatment main 4 */
 .main4 {
     width: 100%;
-    height: 800px;
+    height: 1400px;
 }
 .krest{
     display: none;
 }
 .krovat{
-    width: 84%;
+    width: 72%;
 }
 .silizionka{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 .kletka1{
@@ -1724,21 +2236,22 @@ h4 {
 /* our doctors main 5 */
 
 /* testimonial main 6 */
+
 .baklazhan{
-    height: 330px;
+    height: 540px;
 }
 .syro4ekl {
     right: -51px;
     height: 249px;
-    top: 190px;
+    top: 300px;
 }
 .syro4ekr {
     right: -51px;
     height: 249px;
-    top: 190px;
+    top: 300px;
 }
 .main6{
-    height: 700px;
+    height: 850px;
 }
 .bad{
     width: 43%;
@@ -1757,26 +2270,92 @@ h4 {
 }
 
 /* get in touch  main 7*/
+.kevin{
+    position: relative;
+        
+}
     .batmobil{
         width: 240px;
-        height: auto;
-        position: relative;
-        top: 100px;
-        left: 50px;
+        height: auto; 
     }
+    .batmen{
+        position: absolute;
+        top: -350px;
+        left: -30px;
+    }
+    
     .main7{
-        height: 650px;
+        height: 950px;
+    }
+    .snow{
+        padding-bottom: 250px;
+    }
+    .day{
+        width: 130px;
+    }
+    .bad{
+         width: 130px;
+    }
+    .dobranoc{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
     }
 /* footer */
 .pirog{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.end{
-    height: 900px;
-}
+
 .uliki{
     text-align: center;
+}
+.kisimisi{
+    width: 39px;
+    height: auto;
+    position: relative;
+    left: -5px;
+}
+.white{
+    width:30px ;
+    height:80px ;
+}
+.mandarin{
+    position: relative;
+    top: -40px;
+    left: -10px;
+    font-size: 16px;
+    width: 149px;
+}
+.knopka{
+    position: relative;
+    left: -175px;
+    top: -20px
+
+}
+
+.end{
+    height: 1470px;
+}
+.atom {
+    margin-bottom: 90px;
+    width: 55%;
+    margin-left: 60px;
+    font-family: Noto Sans, sans-serif;
+    position: relative;
+    top:-20px;
+}
+.pirog{
+    gap: 1px;
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+}
+.minatom {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    top: 70px;
+    position: relative;
 }
 }
 
@@ -3877,8 +4456,6 @@ h4 {
     top: -320px;
     pointer-events: none;
 }
-
-
 
 /* our doctors */
 .main5 {

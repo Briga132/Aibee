@@ -1,3 +1,38 @@
+// testinimonial
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".burlyki");
+    const leftBtn = document.querySelector(".syro4ekr");
+    const rightBtn = document.querySelector(".syro4ekl");
+
+    if (!slides.length || !leftBtn || !rightBtn) return;
+
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            if (i === index) {
+                slide.style.display = "flex";
+                slide.classList.remove("skrytnost");
+            } else {
+                slide.style.display = "none";
+                slide.classList.add("skrytnost");
+            }
+        });
+    }
+
+    leftBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    });
+
+    rightBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    });
+
+    showSlide(currentIndex);
+});
+
 // login/sign-up
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('modal');
@@ -149,43 +184,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-// testinimonial
-document.addEventListener("DOMContentLoaded", function () {
-    const slides = document.querySelectorAll(".burlyki");
-    const leftBtn = document.querySelector(".syro4ekr");
-    const rightBtn = document.querySelector(".syro4ekl");
 
-    if (!slides.length || !leftBtn || !rightBtn) return;
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const menuPosition = menu.style.right;
 
-    let currentIndex = 0;
-
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            if (i === index) {
-                slide.style.display = "flex";
-                slide.classList.remove("skrytnost");
-            } else {
-                slide.style.display = "none";
-                slide.classList.add("skrytnost");
-            }
-        });
+    if (menuPosition === '0px') {
+        menu.style.right = '-200px'; 
+    } else {
+        menu.style.right = '0';
     }
-
-    leftBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        showSlide(currentIndex);
-    });
-
-    rightBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-    });
-
-    showSlide(currentIndex);
-});
+}
 // burger menu
-const prompt = require("prompt-sync")({ sigint: true });
-
 function toggleMenu() {
     const sidebar = document.getElementById('sidebar');
     const burger = document.querySelector('.burger');
@@ -205,4 +215,76 @@ window.addEventListener("scroll", function() {
     }
 
     lastScrollTop = scrollTop;
+});
+
+// footer
+    document.addEventListener('DOMContentLoaded', function () {
+        const subscribeForm = document.getElementById('subscribeForm');
+        
+        subscribeForm.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const email = document.getElementById('mada').value;
+            if (email) {
+                alert('Thank you for subscribing!');
+
+                document.getElementById('mada').value = '';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+    });
+
+// fafa search
+const searchBtn = document.querySelector('.btn'); 
+const searchModal = document.getElementById('search-modal');
+const closeBtn = document.getElementById('close-search');
+const searchInput = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
+
+const pages = [
+  { name: 'Home', url: 'index.html' },
+  { name: 'About', url: 'about.html' },
+  { name: 'Treatment', url: 'treatment.html' },
+  { name: 'Doctors', url: 'doctor.html' },
+  { name: 'Testimonial', url: 'testimonial.html' },
+  { name: 'Contact Us', url: 'contact.html' },
+];
+
+searchBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  searchModal.classList.remove('hidden');
+  searchInput.value = '';
+  searchResults.innerHTML = '';
+  searchInput.focus();
+});
+
+closeBtn.addEventListener('click', () => {
+  searchModal.classList.add('hidden');
+});
+
+searchModal.addEventListener('click', (e) => {
+  if (e.target === searchModal) {
+    searchModal.classList.add('hidden');
+  }
+});
+
+searchInput.addEventListener('input', () => {
+  const query = searchInput.value.toLowerCase();
+  searchResults.innerHTML = '';
+
+  if (query.length === 0) {
+    return;
+  }
+
+  const filtered = pages.filter(page => page.name.toLowerCase().includes(query));
+
+  filtered.forEach(page => {
+    const li = document.createElement('li');
+    li.textContent = page.name;
+    li.addEventListener('click', () => {
+      window.location.href = page.url;
+    });
+    searchResults.appendChild(li);
+  });
 });

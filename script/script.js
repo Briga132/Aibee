@@ -512,8 +512,8 @@ window.addEventListener("scroll", function() {
 
     lastScrollTop = scrollTop;
 });
-// fafa search
 
+// footer
     document.addEventListener('DOMContentLoaded', function () {
         const subscribeForm = document.getElementById('subscribeForm');
         
@@ -531,7 +531,7 @@ window.addEventListener("scroll", function() {
         });
     });
 
-
+// fafa search
 const searchBtn = document.querySelector('.btn'); 
 const searchModal = document.getElementById('search-modal');
 const closeBtn = document.getElementById('close-search');

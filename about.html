@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/about.css">
-    <script src="script/about.js" ></script>
-    <script src="script/script.js" defer></script>
+    <link rel="stylesheet" href="style/footer.css">
+    <script src="script/about.js"defer ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
 </head>
 <body>
@@ -70,7 +70,7 @@
                     </a>
                         </div>
                 <form class="polpichenki">
-                    <button class="btn" type="submit">
+                    <button id="fufa" class="btn" type="submit">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </button>
                 </form>
@@ -139,8 +139,8 @@
         </div>
 
      </section>
-    <!-- footer -->
-       <footer class="end">
+   <!-- footer -->
+    <footer class="end">
     <div class="obshirnoe">
         <div class="malekuly">
         <div class="white">
@@ -149,12 +149,16 @@
             </a>
         </div>
             <div class="atom">
-                <form class="minatom" action="">
-                    <input class="mandarin" type="email" placeholder="Your email">
-                    <a href="index.html" class="knopka">
-                        SUBSCRIBE
-                    </a>
-                </form>
+               <form class="minatom" id="subscribeForm" action="">
+    <input id="mada" class="mandarin" type="email" placeholder="Your email" required>
+    <button type="submit" class="knopka" id="knopka">
+        SUBSCRIBE
+    </button>
+</form>
+
+
+
+
             </div>
         </div>
     </div>
@@ -298,7 +302,8 @@
             </p>
         </div>
     </footer>
-       <div id="modal" class="modal-overlay hidden">
+
+    <div id="modal" class="modal-overlay hidden">
   <div class="modal-content">
     <span class="close-btn">&times;</span>
     <div class="modal-header">Welcome</div>
@@ -319,5 +324,7 @@
     </form>
   </div>
 </div>
+
+
 </body>
 </html>
